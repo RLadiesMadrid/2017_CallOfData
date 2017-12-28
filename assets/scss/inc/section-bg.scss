@@ -1,0 +1,54 @@
+/*-------------------------------------
+ * Section background
+ -------------------------------------*/
+.bg-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.bg-container-full {
+	@extend .bg-container;
+	right: 0;
+	left: 0;
+}
+
+.bg-container-left {
+	@extend .bg-container;
+	left: 0;
+
+	@media screen and (max-width: $screen-tablet) {
+		right: 0;
+	}
+}
+
+.bg-container-right {
+	@extend .bg-container;
+	right: 0;
+
+	@media screen and (max-width: $screen-tablet) {
+		display: none;
+	}
+}
+
+// typography forms section color
+.white-section {
+	background: #ffffff;
+}
+
+// Our team left section
+.team-left-bg {
+	@include background($sectionPath, "team-left.jpg", cover, -2, absolute);
+	
+	&:before {
+		@include overlay(#222222, .95);
+	}
+}
+
+// Our team right section
+.team-right-bg {
+	@include background($sectionPath, "team-right.jpg", cover, -2, absolute);
+	
+	&:before {
+		@include overlay(#222222, .95);
+	}
+}

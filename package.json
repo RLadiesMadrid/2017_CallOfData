@@ -1,0 +1,43 @@
+{
+  "name": "2017_call_of_data",
+  "version": "1.0.0",
+  "description": "WebSite of the Datathon Call Of Data 2018",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RLadiesMadrid/2017_CallOfData"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "event",
+    "hackathon",
+    "datathon",
+    "spain",
+    "rladies",
+    "madrid"
+  ],
+  "author": "R-Ladies Madrid",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-file-include": "^1.1.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-prettify": ">=0.3.0",
+    "gulp-rename": ">=1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^1.4.0",
+    "slick-carousel": "^1.7.1"
+  }
+}
