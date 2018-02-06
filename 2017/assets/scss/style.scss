@@ -1,0 +1,130 @@
+@import "inc/mixin.scss"; // mixins list
+@import "inc/variables.scss"; // Variables list
+@import "inc/general.scss"; // General style
+@import "inc/typography.scss"; // Typography style
+@import "inc/social-buttons.scss"; // Social buttons
+@import "inc/navbar.scss"; // Navbar style
+@import "inc/features.scss"; // Features style
+@import "inc/carousel.scss"; // Carousel style
+@import "inc/widgets.scss"; // Widgets style
+@import "inc/list.scss"; // List style
+@import "inc/services.scss"; // Services style
+@import "inc/counters.scss"; // Counters style
+@import "inc/loader.scss"; // Loader style
+@import "inc/accordion.scss"; // accordion style
+@import "inc/tabs.scss"; // tabs style
+@import "inc/portfolio.scss"; // portfolio style
+@import "inc/home.scss"; // home style
+// helper
+@import "inc/helpers.scss"; // Helpers class
+@import "inc/forms.scss"; // Form style
+@import "inc/pricing.scss"; // Contact style
+/*-------------------------------------
+ * Page header
+ -------------------------------------*/
+.section-header {
+    border-bottom: none;
+    margin: 0;
+    padding: 4em 0 3em;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    s h6 {
+        margin: 0;
+        text-align: center;
+        @include font-size($pageHeaderFontSize);
+        color: $pageHeaderColor;
+        letter-spacing: $pageHeaderLetterSpacing;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 3.875em;
+            height: 1px;
+            background: rgba($pageHeaderLineColor, .2);
+            margin: 1.500em auto 0;
+            position: relative;
+            left: -3px;
+        }
+    }
+
+    .sub-title {
+        color: #908c8c;
+        @include font-size(1.4);
+    }
+}
+
+.sub-header {
+    letter-spacing: 0.2em;
+    @include font-size(1.4);
+}
+/*-------------------------------------
+ * Footer
+ -------------------------------------*/
+footer.site-footer {
+    background: $footerBgColor;
+    padding: $footerTopOffset 0 $footerBottomOffset;
+
+    .copyright {
+        color: $copyrightColor;
+        @include font-size($copyrightFontSize);
+
+        .company {
+            letter-spacing: 0.2em;
+        }
+    }
+
+    & > div + div {
+        margin-top: 4.700em;
+    }
+}
+
+.mfp-iframe-holder .mfp-content {
+    vertical-align: middle;
+}
+/*-------------------------------------
+ * Layer animation
+ -------------------------------------*/
+.layers img {
+    position: relative;
+    z-index: 1;
+}
+
+.layers .layer {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    max-width: 90%;
+}
+
+[data-layer-animation] {
+    visibility: hidden;
+}
+
+.animated[data-layer-animation] {
+    visibility: visible;
+    z-index: 0;
+}
+/*-------------------------------------
+ * Video responsive
+ -------------------------------------*/
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25% !important;
+    position: relative;
+    height: 0;
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}

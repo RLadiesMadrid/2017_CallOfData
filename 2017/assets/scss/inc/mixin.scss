@@ -1,0 +1,11 @@
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+@mixin background($folderUrl: '', $imgName: '', $size: auto, $zIndex: auto, $position: static) {
+	background: url($folderUrl + $imgName) 50% 50% no-repeat;
+	background-size: $size;
+	position: $position;
+	z-index: $zIndex;
+}

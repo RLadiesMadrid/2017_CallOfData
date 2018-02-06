@@ -1,0 +1,155 @@
+/*-------------------------------------
+ * General style
+ -------------------------------------*/
+html {
+	font-size: $htmlFontSize;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+
+	.wrapper {
+		overflow: hidden;
+	}
+
+	* {
+		outline: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+
+	@media screen and (max-width: $screen-tablet) {
+		font-size: 55%;
+	}
+
+	@media screen and (max-width: $screen-phone) {
+		font-size: 45%;
+	}
+}
+
+body {
+	font-family: $bodyFontFamily;
+	@include font-size($pFontSize);
+	font-weight: $pFontWeight;
+	letter-spacing: $pLetterSpacing;
+	line-height: $pLineHeight;
+	color: $bodyColor;
+	background: $bodyBg;
+	background: #000;
+	overflow-x: hidden;
+
+	.page-loader {
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s .3s, opacity .3s 0s;
+	}
+
+	&.load {
+
+		.page-loader {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s, opacity .3s .1s;
+		}
+	}
+}
+
+.mfp-arrow-right:before,
+.mfp-arrow-right .mfp-b,
+.mfp-arrow-left:before,
+.mfp-arrow-left .mfp-b {
+	border: none;
+}
+
+.mfp-counter {
+	display: none;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+[data-overlay-color] {
+	position: relative;
+}
+
+[data-background] {
+	background-size: cover;
+	background-position: 50% 10%;
+}
+
+.scroll-btn-wrapper {
+	text-align: center;
+	position: absolute;
+	bottom: 17px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+
+	@media (max-width: $screen-tablet) {
+		bottom: 0;
+	}
+
+	.scroll-down {
+		display: inline-block;
+		color: rgba(#ffffff, .83);
+		text-transform: uppercase;
+		font-weight: 400;
+		@include font-size(1);
+		letter-spacing: .1em;
+
+		@media (max-width: $screen-tablet) {
+			@include font-size(0);
+		}
+
+		img {
+			display: block;
+			margin: 0 auto 12px;
+			position: relative;
+			animation-name: scroll-down;
+		    animation-duration: 1.2s;
+		    animation-iteration-count: infinite;
+		    @media (max-width: $screen-tablet) {
+				max-width: 12px;
+			}
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+			color: rgba(#ffffff, .83);
+		}
+	}
+}
+
+@keyframes scroll-down {
+	0%{
+		top: 0;
+	}
+	50%{
+		top: 6px;
+	}
+	100%{
+		top: 0;
+	}
+}
+
+.morphext > .animated {
+    display: inline-block;
+}
