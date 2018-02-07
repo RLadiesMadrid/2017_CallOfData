@@ -1,0 +1,25 @@
+{
+  "name": "call-of-data-2018-web",
+  "version": "1.0.0",
+  "description": "Landing con la información del Call of Data 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RLadiesMadrid/2017_CallOfData.git"
+  },
+  "keywords": [
+    "callofdata",
+    "web",
+    "evento",
+    "datos"
+  ],
+  "author": "callofdata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RLadiesMadrid/2017_CallOfData/issues"
+  },
+  "homepage": "https://github.com/RLadiesMadrid/2017_CallOfData#readme"
+}
