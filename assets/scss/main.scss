@@ -42,11 +42,21 @@
   .video-label{
     @include video---mobile;
     max-width: 125px;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include video---tablet;
+      max-width: 200px;
+    }    
   }
 
   .video-play{
     height: 30px;
-    width: 30px; 
+    width: 30px;
+
+    @media screen and (min-width: $tablet-min-width) {
+      height: 45px;
+      width: 45px;
+    }
   }
 }
 
@@ -60,6 +70,11 @@
     @include coc---mobile;
     margin: 20px 0;
     text-decoration: none;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include coc---tablet;
+      margin: 30px 0;
+    }
   }
 
   .get-tickets {
@@ -70,6 +85,10 @@
     &-label{
       @include cta---mobile;
       text-decoration: none;
+
+      @media screen and (min-width: $tablet-min-width) {
+        @include cta---tablet;
+      }
     }
   }
 
@@ -79,10 +98,18 @@
     display: inline-block;
     padding: 10px 25px;
     opacity: 0.48;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include save-the-date---tablet;      
+    }
   }
 
   .claim {
     @include Claim---mobile;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include claim---tablet;
+    }
   }
 }
 
@@ -92,6 +119,10 @@
   .collaborators-label {
     @include partners---mobile;
     text-align: center;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include partners---tablet;    
+    }
   }
 
   .communities {
@@ -102,44 +133,10 @@
     display: inline-block;
     height: 30px;
     width: 30px;
+
+    @media screen and (min-width: $tablet-min-width) {
+      height: 60px;
+      width: 60px;
+    }
   }
 }
-
-@media screen and (min-width: $tablet-min-width) {
-  .video-label{
-    @include video---tablet;
-    max-width: 200px;
-  }
-
-  .video-play{
-    height: 45px;
-    width: 45px;
-  }
-  
-  .get-tickets-label {
-    @include cta---tablet;
-  }
-
-  .code-of-conduct{
-    @include coc---tablet;
-    margin: 30px 0;    
-  }
-
-  .save-the-date {
-    @include save-the-date---tablet;
-  }
-
-  .claim {
-    @include claim---tablet;
-  }
-
-  .collaborators-label {
-    @include partners---tablet;
-  }
-
-  .logo-item {
-    height: 60px;
-    width: 60px;
-  }
-}
-
