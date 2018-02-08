@@ -512,7 +512,7 @@ template {
   align-self: flex-end; }
 
 .container-secondary .code-of-conduct {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab';
   font-size: 12px;
   font-weight: 300;
   line-height: 1.25;
@@ -530,7 +530,7 @@ template {
   border-radius: 6px;
   background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, #c91900), linear-gradient(#ee4613, #ee4613); }
   .container-secondary .get-tickets-label {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -538,20 +538,20 @@ template {
     text-decoration: none; }
 
 .container-secondary .save-the-date {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab';
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   color: #ffffff; }
 
 .container-secondary .claim {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab';
   font-size: 18px;
   text-align: center;
   color: #ffffff; }
 
 .container-collaborators .collaborators-label {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab';
   font-size: 12px;
   text-align: center;
   color: #ee4613;
@@ -567,31 +567,31 @@ template {
 
 @media screen and (min-width: 768px) {
   .get-tickets-label {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 32px;
     font-weight: bold;
     text-align: center;
     color: #ffffff; }
   .code-of-conduct {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
     text-align: center;
     color: #ff991d; }
   .save-the-date {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 40px;
     font-weight: bold;
     text-align: center;
     color: #ffffff; }
   .claim {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 32px;
     text-align: center;
     color: #ffffff; }
   .collaborators-label {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 16px;
     text-align: center;
     color: #ee4613; }

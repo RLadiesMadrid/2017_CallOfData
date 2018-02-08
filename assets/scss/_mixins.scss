@@ -1,5 +1,5 @@
 @mixin save-the-date---tablet {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -7,7 +7,7 @@
   }
   
   @mixin cta---tablet {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -15,14 +15,14 @@
   }
   
   @mixin claim---tablet {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 32px;
     text-align: center;
     color: #ffffff;
   }
   
   @mixin save-the-date---mobile {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -30,14 +30,14 @@
   }
   
   @mixin video---tablet {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 22.4px;
     text-align: right;
     color: $charcoal;
   }
   
   @mixin cta---mobile {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -45,21 +45,21 @@
   }
   
   @mixin Claim---mobile {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 18px;
     text-align: center;
     color: #ffffff;
   }
   
   @mixin partners---tablet {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 16px;
     text-align: center;
     color: $tomato;
   }
   
   @mixin coc---tablet {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
@@ -68,21 +68,21 @@
   }
   
   @mixin video---mobile {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 14px;
     text-align: right;
     color: $charcoal;
   }
   
   @mixin partners---mobile {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 12px;
     text-align: center;
     color: $tomato;
   }
   
   @mixin coc---mobile {
-    font-family: RobotoSlab;
+    font-family: 'Roboto Slab';
     font-size: 12px;
     font-weight: 300;
     line-height: 1.25;
