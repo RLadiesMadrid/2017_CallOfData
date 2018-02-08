@@ -512,14 +512,16 @@ template {
 .container-video {
   align-self: flex-end;
   display: flex;
-  align-items: baseline;
-  justify-content: space-around; }
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0; }
   .container-video .video-label {
     font-family: 'Roboto Slab';
     font-size: 14px;
     text-align: right;
     color: #2c362c;
-    max-width: 125px; }
+    max-width: 125px;
+    margin: 0; }
     @media screen and (min-width: 768px) {
       .container-video .video-label {
         font-family: 'Roboto Slab';
@@ -528,6 +530,7 @@ template {
         color: #2c362c;
         max-width: 200px; } }
   .container-video .video-play {
+    margin: 0 0 0 20px;
     height: 30px;
     width: 30px; }
     @media screen and (min-width: 768px) {

@@ -36,12 +36,14 @@
 .container-video {
   align-self: flex-end;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-around;
+  margin: 20px 0;
 
   .video-label{
     @include video---mobile;
     max-width: 125px;
+    margin: 0;
 
     @media screen and (min-width: $tablet-min-width) {
       @include video---tablet;
@@ -50,6 +52,7 @@
   }
 
   .video-play{
+    margin: 0 0 0 20px;
     height: 30px;
     width: 30px;
 
