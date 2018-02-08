@@ -499,15 +499,15 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100%; }
+  height: inherit; }
   .container-primary_padding {
-    padding: 20px 18px 0; }
+    padding: 0 18px; }
     @media screen and (min-width: 768px) {
       .container-primary_padding {
-        padding: 20px 45px 0; } }
+        padding: 0 45px; } }
     @media screen and (min-width: 1440px) {
       .container-primary_padding {
-        padding: 20px 200px 0; } }
+        padding: 0 200px; } }
 
 .container-video {
   align-self: flex-end;

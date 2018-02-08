@@ -19,16 +19,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  height: inherit;
   
   &_padding{
-    padding: 20px 18px 0;
+    padding: 0 18px;
     
     @media screen and (min-width: $tablet-min-width) {
-      padding: 20px 45px 0;
+      padding: 0 45px ;
     }
     @media screen and (min-width: $desktop-min-width) {
-      padding: 20px 200px 0;
+      padding: 0 200px;
     }
   }
 }
