@@ -4,6 +4,7 @@
 @import '_breakpoints';
 @import '_mixins';
 
+
 .landing{
   position: relative;
   background-color: $background;
@@ -12,6 +13,11 @@
   background-size: contain;
   background-position-x: center;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-min-width) {
+    background-size: 100% auto;
+    background-position-y: -10rem;
+  }
 }
 
 .container-primary {
@@ -130,16 +136,24 @@
 
   .communities {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   .logo-item {
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    padding: 0 2.5px;
 
-    @media screen and (min-width: $tablet-min-width) {
-      height: 60px;
-      width: 60px;
+    img {
+      display: block;
+      height: 30px;
+      width: 30px;
+      
+      @media screen and (min-width: $tablet-min-width) {
+        height: 60px;
+        width: 60px;
+      }
     }
+
   }
 }

@@ -493,6 +493,10 @@ template {
   background-size: contain;
   background-position-x: center;
   background-repeat: no-repeat; }
+  @media screen and (min-width: 768px) {
+    .landing {
+      background-size: 100% auto;
+      background-position-y: -10rem; } }
 
 .container-primary {
   display: flex;
@@ -622,13 +626,18 @@ template {
       color: #ee4613; } }
 
 .container-collaborators .communities {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
 
 .container-collaborators .logo-item {
   display: inline-block;
-  height: 30px;
-  width: 30px; }
-  @media screen and (min-width: 768px) {
-    .container-collaborators .logo-item {
-      height: 60px;
-      width: 60px; } }
+  padding: 0 2.5px; }
+  .container-collaborators .logo-item img {
+    display: block;
+    height: 30px;
+    width: 30px; }
+    @media screen and (min-width: 768px) {
+      .container-collaborators .logo-item img {
+        height: 60px;
+        width: 60px; } }
