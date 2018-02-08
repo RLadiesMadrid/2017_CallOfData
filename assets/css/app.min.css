@@ -498,7 +498,8 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: space-between;
+  height: 100%; }
   .container-primary_padding {
     padding: 20px 18px 0; }
     @media screen and (min-width: 768px) {
@@ -510,7 +511,18 @@ template {
 
 .container-video {
   align-self: flex-end;
-  display: flex; }
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around; }
+  .container-video .video-label {
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    text-align: right;
+    color: #2c362c;
+    max-width: 125px; }
+  .container-video .video-play {
+    height: 30px;
+    width: 30px; }
 
 .container-secondary {
   display: flex;
@@ -553,23 +565,31 @@ template {
     text-align: center;
     color: #ffffff; }
 
-.container-collaborators {
-  position: absolute;
-  bottom: 0px; }
-  .container-collaborators .collaborators-label {
-    font-family: 'Roboto Slab';
-    font-size: 12px;
-    text-align: center;
-    color: #ee4613;
-    text-align: center; }
-  .container-collaborators .communities {
-    list-style-type: none; }
-  .container-collaborators .logo-item {
-    display: inline-block;
-    height: 30px;
-    width: 30px; }
+.container-collaborators .collaborators-label {
+  font-family: 'Roboto Slab';
+  font-size: 12px;
+  text-align: center;
+  color: #ee4613;
+  text-align: center; }
+
+.container-collaborators .communities {
+  list-style-type: none; }
+
+.container-collaborators .logo-item {
+  display: inline-block;
+  height: 30px;
+  width: 30px; }
 
 @media screen and (min-width: 768px) {
+  .video-label {
+    font-family: 'Roboto Slab';
+    font-size: 22.4px;
+    text-align: right;
+    color: #2c362c;
+    max-width: 200px; }
+  .video-play {
+    height: 45px;
+    width: 45px; }
   .get-tickets-label {
     font-family: 'Roboto';
     font-size: 32px;
