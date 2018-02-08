@@ -550,20 +550,20 @@ template {
   text-align: center;
   color: #ffffff; }
 
-.container-collaborators {
-  justify-self: flex-end; }
-  .container-collaborators .collaborators-label {
-    font-family: RobotoSlab;
-    font-size: 12px;
-    text-align: center;
-    color: #ee4613;
-    text-align: center; }
-  .container-collaborators .communities {
-    list-style-type: none; }
-  .container-collaborators .logo-item {
-    display: inline-block;
-    height: 30px;
-    width: 30px; }
+.container-collaborators .collaborators-label {
+  font-family: RobotoSlab;
+  font-size: 12px;
+  text-align: center;
+  color: #ee4613;
+  text-align: center; }
+
+.container-collaborators .communities {
+  list-style-type: none; }
+
+.container-collaborators .logo-item {
+  display: inline-block;
+  height: 30px;
+  width: 30px; }
 
 @media screen and (min-width: 768px) {
   .get-tickets-label {
