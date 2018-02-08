@@ -496,7 +496,7 @@ template {
   @media screen and (min-width: 768px) {
     .landing {
       background-size: 100% auto;
-      background-position-y: -10rem; } }
+      background-position-y: -15rem; } }
 
 .container-primary {
   display: flex;
