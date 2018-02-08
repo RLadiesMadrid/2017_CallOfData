@@ -509,61 +509,65 @@ template {
         padding: 20px 200px 0; } }
 
 .container-video {
-  align-self: flex-end; }
+  align-self: flex-end;
+  display: flex; }
 
-.container-secondary .code-of-conduct {
-  font-family: 'Roboto Slab';
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 1.25;
-  text-align: center;
-  color: #ff991d;
-  display: block;
-  text-decoration: none; }
-
-.container-secondary .get-tickets-container {
-  text-align: center; }
-
-.container-secondary .get-tickets {
-  display: inline-block;
-  padding: 15px 45px;
-  border-radius: 6px;
-  background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, #c91900), linear-gradient(#ee4613, #ee4613); }
-  .container-secondary .get-tickets-label {
-    font-family: 'Roboto';
-    font-size: 20px;
+.container-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .container-secondary .code-of-conduct {
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: center;
+    color: #ff991d;
+    margin: 20px 0;
+    text-decoration: none; }
+  .container-secondary .get-tickets {
+    padding: 15px 45px;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, #c91900), linear-gradient(#ee4613, #ee4613); }
+    .container-secondary .get-tickets-label {
+      font-family: 'Roboto';
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none; }
+  .container-secondary .save-the-date {
+    font-family: 'Roboto Slab';
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
-    text-decoration: none; }
+    border: 2px solid;
+    display: inline-block;
+    padding: 10px 25px;
+    opacity: 0.48; }
+  .container-secondary .claim {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff; }
 
-.container-secondary .save-the-date {
-  font-family: 'Roboto Slab';
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff; }
-
-.container-secondary .claim {
-  font-family: 'Roboto Slab';
-  font-size: 18px;
-  text-align: center;
-  color: #ffffff; }
-
-.container-collaborators .collaborators-label {
-  font-family: 'Roboto Slab';
-  font-size: 12px;
-  text-align: center;
-  color: #ee4613;
-  text-align: center; }
-
-.container-collaborators .communities {
-  list-style-type: none; }
-
-.container-collaborators .logo-item {
-  display: inline-block;
-  height: 30px;
-  width: 30px; }
+.container-collaborators {
+  position: absolute;
+  bottom: 0px; }
+  .container-collaborators .collaborators-label {
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    text-align: center;
+    color: #ee4613;
+    text-align: center; }
+  .container-collaborators .communities {
+    list-style-type: none; }
+  .container-collaborators .logo-item {
+    display: inline-block;
+    height: 30px;
+    width: 30px; }
 
 @media screen and (min-width: 768px) {
   .get-tickets-label {
@@ -578,7 +582,8 @@ template {
     font-weight: 300;
     line-height: 1.5;
     text-align: center;
-    color: #ff991d; }
+    color: #ff991d;
+    margin: 30px 0; }
   .save-the-date {
     font-family: 'Roboto Slab';
     font-size: 40px;

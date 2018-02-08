@@ -34,21 +34,22 @@
 
 .container-video {
   align-self: flex-end;
+  display: flex;
 }
 
 .container-secondary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
   .code-of-conduct{
     @include coc---mobile;
-    display: block;
+    margin: 20px 0;
     text-decoration: none;
   }
 
-  .get-tickets-container{
-    text-align: center;
-  }
-
   .get-tickets {
-    display: inline-block;
     padding: 15px 45px;
     border-radius: 6px;
     background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, $red), linear-gradient($tomato, $tomato);
@@ -61,16 +62,22 @@
 
   .save-the-date {
     @include save-the-date---mobile;
+    border: 2px solid;
+    display: inline-block;
+    padding: 10px 25px;
+    opacity: 0.48;
   }
 
   .claim {
     @include Claim---mobile;
   }
-
 }
 
 
 .container-collaborators {
+  position: absolute;
+  bottom: 0px;
+
 
   .collaborators-label {
     @include partners---mobile;
@@ -95,6 +102,7 @@
 
   .code-of-conduct{
     @include coc---tablet;
+    margin: 30px 0;    
   }
 
   .save-the-date {
