@@ -488,7 +488,7 @@ template {
 .landing {
   position: relative;
   background-color: #010101;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/background.jpeg");
   background-size: contain;
   background-position-x: center;
