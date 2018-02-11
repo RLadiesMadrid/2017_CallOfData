@@ -26,10 +26,10 @@
   align-items: center;
   justify-content: space-between;
   height: inherit;
-  
+
   &_padding{
     padding: 0 18px;
-    
+
     @media screen and (min-width: $tablet-min-width) {
       padding: 0 45px ;
     }
@@ -54,17 +54,39 @@
     @media screen and (min-width: $tablet-min-width) {
       @include video---tablet;
       max-width: 200px;
-    }    
+    }
   }
 
   .video-play{
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white;
     margin: 0 0 0 20px;
-    height: 30px;
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
     width: 30px;
+    position: relative;
+    color: black;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: .85em;
+      margin-left: .1em;
+      content: "\f04b";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     @media screen and (min-width: $tablet-min-width) {
-      height: 45px;
+      padding-top: 45px;
       width: 45px;
+      &::before {
+        font-size: 1.2em;
+        margin-left: .1em;
+      }
     }
   }
 }
@@ -80,9 +102,25 @@
     margin: 20px 0;
     text-decoration: none;
 
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: .85em;
+        margin-left: .35em;
+        content: "\f35d";
+    }
+
     @media screen and (min-width: $tablet-min-width) {
       @include coc---tablet;
       margin: 30px 0;
+    }
+  }
+  .logo {
+    img {
+      height: 150px;
+      @media screen and (min-width: $tablet-min-width) {
+        height: 238px;
+      }
     }
   }
 
@@ -90,7 +128,7 @@
     padding: 15px 45px;
     border-radius: 6px;
     background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, $red), linear-gradient($tomato, $tomato);
-  
+
     &-label{
       @include cta---mobile;
       text-decoration: none;
@@ -109,7 +147,7 @@
     opacity: 0.48;
 
     @media screen and (min-width: $tablet-min-width) {
-      @include save-the-date---tablet;      
+      @include save-the-date---tablet;
     }
   }
 
@@ -124,13 +162,16 @@
 
 
 .container-collaborators {
-
+    padding-bottom: 10px;
+    @media screen and (min-width: $tablet-min-width) {
+      padding-bottom: 60px;
+    }
   .collaborators-label {
     @include partners---mobile;
     text-align: center;
 
     @media screen and (min-width: $tablet-min-width) {
-      @include partners---tablet;    
+      @include partners---tablet;
     }
   }
 
@@ -148,12 +189,21 @@
       display: block;
       height: 30px;
       width: 30px;
-      
+
       @media screen and (min-width: $tablet-min-width) {
         height: 60px;
         width: 60px;
       }
     }
-
+    .logo-item--codenares {
+      border: 1px solid $codenares;
+      width: 20px;
+      height: 28px;
+      @media screen and (min-width: $tablet-min-width) {
+        height: 58px;
+        width: 58px;
+      }
+    }
   }
+
 }
