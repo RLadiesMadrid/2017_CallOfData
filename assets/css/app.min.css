@@ -534,13 +534,32 @@ template {
         color: #2c362c;
         max-width: 200px; } }
   .container-video .video-play {
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white;
     margin: 0 0 0 20px;
-    height: 30px;
-    width: 30px; }
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 30px;
+    position: relative;
+    color: black; }
+    .container-video .video-play::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: .85em;
+      margin-left: .1em;
+      content: "\f04b";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
     @media screen and (min-width: 768px) {
       .container-video .video-play {
-        height: 45px;
-        width: 45px; } }
+        padding-top: 45px;
+        width: 45px; }
+        .container-video .video-play::before {
+          font-size: 1.2em;
+          margin-left: .1em; } }
 
 .container-secondary {
   display: flex;
@@ -556,6 +575,12 @@ template {
     color: #ff991d;
     margin: 20px 0;
     text-decoration: none; }
+    .container-secondary .code-of-conduct::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: .85em;
+      margin-left: .35em;
+      content: "\f35d"; }
     @media screen and (min-width: 768px) {
       .container-secondary .code-of-conduct {
         font-family: 'Roboto Slab';

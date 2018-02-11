@@ -58,13 +58,35 @@
   }
 
   .video-play{
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white;
     margin: 0 0 0 20px;
-    height: 30px;
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
     width: 30px;
+    position: relative;
+    color: black;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: .85em;
+      margin-left: .1em;
+      content: "\f04b";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     @media screen and (min-width: $tablet-min-width) {
-      height: 45px;
+      padding-top: 45px;
       width: 45px;
+      &::before {
+        font-size: 1.2em;
+        margin-left: .1em;
+      }
     }
   }
 }
@@ -79,6 +101,14 @@
     @include coc---mobile;
     margin: 20px 0;
     text-decoration: none;
+
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: .85em;
+        margin-left: .35em;
+        content: "\f35d";
+    }
 
     @media screen and (min-width: $tablet-min-width) {
       @include coc---tablet;
