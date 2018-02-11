@@ -590,6 +590,11 @@ template {
         text-align: center;
         color: #ff991d;
         margin: 30px 0; } }
+  .container-secondary .logo img {
+    height: 150px; }
+    @media screen and (min-width: 768px) {
+      .container-secondary .logo img {
+        height: 238px; } }
   .container-secondary .get-tickets {
     padding: 15px 45px;
     border-radius: 6px;
