@@ -612,32 +612,43 @@ template {
         text-align: center;
         color: #ffffff; } }
 
-.container-collaborators .collaborators-label {
-  font-family: 'Roboto Slab';
-  font-size: 12px;
-  text-align: center;
-  color: #ee4613;
-  text-align: center; }
+.container-collaborators {
+  padding-bottom: 10px; }
   @media screen and (min-width: 768px) {
-    .container-collaborators .collaborators-label {
-      font-family: 'Roboto Slab';
-      font-size: 16px;
-      text-align: center;
-      color: #ee4613; } }
-
-.container-collaborators .communities {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-.container-collaborators .logo-item {
-  display: inline-block;
-  padding: 0 2.5px; }
-  .container-collaborators .logo-item img {
-    display: block;
-    height: 30px;
-    width: 30px; }
+    .container-collaborators {
+      padding-bottom: 60px; } }
+  .container-collaborators .collaborators-label {
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    text-align: center;
+    color: #ee4613;
+    text-align: center; }
     @media screen and (min-width: 768px) {
-      .container-collaborators .logo-item img {
-        height: 60px;
-        width: 60px; } }
+      .container-collaborators .collaborators-label {
+        font-family: 'Roboto Slab';
+        font-size: 16px;
+        text-align: center;
+        color: #ee4613; } }
+  .container-collaborators .communities {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .container-collaborators .logo-item {
+    display: inline-block;
+    padding: 0 2.5px; }
+    .container-collaborators .logo-item img {
+      display: block;
+      height: 30px;
+      width: 30px; }
+      @media screen and (min-width: 768px) {
+        .container-collaborators .logo-item img {
+          height: 60px;
+          width: 60px; } }
+    .container-collaborators .logo-item .logo-item--codenares {
+      border: 1px solid #13A1EC;
+      width: 20px;
+      height: 28px; }
+      @media screen and (min-width: 768px) {
+        .container-collaborators .logo-item .logo-item--codenares {
+          height: 58px;
+          width: 58px; } }
