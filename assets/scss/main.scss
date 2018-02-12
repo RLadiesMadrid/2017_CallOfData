@@ -5,10 +5,9 @@
 @import '_mixins';
 
 
-.landing{
-  position: relative;
+.landing {
   background-color: $background;
-  min-height: 100vh;
+  min-height: 100%;
   background-image: url('../img/background.jpeg');
   background-size: contain;
   background-position-x: center;
