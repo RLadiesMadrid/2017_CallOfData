@@ -7,7 +7,6 @@
 
 .landing {
   background-color: $background;
-  min-height: 100%;
   background-image: url('../img/background.jpeg');
   background-size: contain;
   background-position-x: center;
@@ -20,11 +19,12 @@
 }
 
 .container-primary {
+	min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: inherit;
+	box-sizing: border-box;
 
   &_padding{
     padding: 0 18px;
@@ -126,10 +126,8 @@
   .get-tickets {
     padding: 15px 45px;
     border-radius: 6px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 25, 0, 0)), color-stop(73%, rgba(201, 25, 0, 0.09)), to($red)), -webkit-gradient(linear, left top, left bottom, from($tomato), to($tomato));
-		background-image: -webkit-linear-gradient(top, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, $red), -webkit-linear-gradient($tomato, $tomato);
-		background-image: -o-linear-gradient(top, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, $red), -o-linear-gradient($tomato, $tomato);
-		background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, $red), linear-gradient($tomato, $tomato);
+		background: $tomato;
+
 
     &-label{
       @include cta---mobile;

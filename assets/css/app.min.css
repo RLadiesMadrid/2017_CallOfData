@@ -487,7 +487,6 @@ template {
 
 .landing {
   background-color: #010101;
-  min-height: 100%;
   background-image: url("../img/background.jpeg");
   background-size: contain;
   background-position-x: center;
@@ -498,11 +497,12 @@ template {
       background-position-y: -15rem; } }
 
 .container-primary {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: inherit; }
+  box-sizing: border-box; }
   .container-primary_padding {
     padding: 0 18px; }
     @media screen and (min-width: 768px) {
@@ -597,10 +597,7 @@ template {
   .container-secondary .get-tickets {
     padding: 15px 45px;
     border-radius: 6px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 25, 0, 0)), color-stop(73%, rgba(201, 25, 0, 0.09)), to(#c91900)), -webkit-gradient(linear, left top, left bottom, from(#ee4613), to(#ee4613));
-    background-image: -webkit-linear-gradient(top, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, #c91900), -webkit-linear-gradient(#ee4613, #ee4613);
-    background-image: -o-linear-gradient(top, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, #c91900), -o-linear-gradient(#ee4613, #ee4613);
-    background-image: linear-gradient(to bottom, rgba(201, 25, 0, 0), rgba(201, 25, 0, 0.09) 73%, #c91900), linear-gradient(#ee4613, #ee4613); }
+    background: #ee4613; }
     .container-secondary .get-tickets-label {
       font-family: 'Roboto';
       font-size: 20px;
