@@ -38,14 +38,14 @@
   }
 }
 
-.container-video {
+.container-previously {
   align-self: flex-end;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 20px 0;
 
-  .video-label{
+  .previously-label{
     @include video---mobile;
     max-width: 125px;
     margin: 0;
@@ -56,7 +56,7 @@
     }
   }
 
-  .video-play{
+  .previously-icon{
     border-radius: 50%;
     box-shadow: 0 0 0 4px white;
     margin: 0 0 0 20px;
@@ -71,8 +71,7 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 600;
       font-size: .85em;
-      margin-left: .1em;
-      content: "\f04b";
+      content: "\f049";
       position: absolute;
       left: 50%;
       top: 50%;
@@ -84,7 +83,6 @@
       width: 45px;
       &::before {
         font-size: 1.2em;
-        margin-left: .1em;
       }
     }
   }

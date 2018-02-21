@@ -512,13 +512,13 @@ template {
       .container-primary_padding {
         padding: 0 200px; } }
 
-.container-video {
+.container-previously {
   align-self: flex-end;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 20px 0; }
-  .container-video .video-label {
+  .container-previously .previously-label {
     font-family: 'Roboto Slab';
     font-size: 14px;
     text-align: right;
@@ -526,13 +526,13 @@ template {
     max-width: 125px;
     margin: 0; }
     @media screen and (min-width: 768px) {
-      .container-video .video-label {
+      .container-previously .previously-label {
         font-family: 'Roboto Slab';
         font-size: 22.4px;
         text-align: right;
         color: #2c362c;
         max-width: 200px; } }
-  .container-video .video-play {
+  .container-previously .previously-icon {
     border-radius: 50%;
     box-shadow: 0 0 0 4px white;
     margin: 0 0 0 20px;
@@ -542,23 +542,21 @@ template {
     width: 30px;
     position: relative;
     color: black; }
-    .container-video .video-play::before {
+    .container-previously .previously-icon::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 600;
       font-size: .85em;
-      margin-left: .1em;
-      content: "\f04b";
+      content: "\f049";
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%); }
     @media screen and (min-width: 768px) {
-      .container-video .video-play {
+      .container-previously .previously-icon {
         padding-top: 45px;
         width: 45px; }
-        .container-video .video-play::before {
-          font-size: 1.2em;
-          margin-left: .1em; } }
+        .container-previously .previously-icon::before {
+          font-size: 1.2em; } }
 
 .container-secondary {
   display: flex;
