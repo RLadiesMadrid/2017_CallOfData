@@ -1,92 +1,128 @@
+@mixin save-the-date---mobile {
+  font-family: 'Roboto Slab';
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
 @mixin save-the-date---tablet {
-    font-family: 'Roboto Slab';
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
+  font-family: 'Roboto Slab';
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin cta---mobile {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin cta---tablet {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin Claim---mobile {
+  font-family: 'Roboto Slab';
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin claim---tablet {
+  font-family: 'Roboto Slab';
+  font-size: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin video---mobile {
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  text-align: right;
+  color: $charcoal;
+}
+
+@mixin video---tablet {
+  font-family: 'Roboto Slab';
+  font-size: 22.4px;
+  text-align: right;
+  color: $charcoal;
+}
+
+@mixin partners---tablet {
+  font-family: 'Roboto Slab';
+  font-size: 16px;
+  text-align: center;
+  color: $tomato;
+}
+
+@mixin partners---mobile {
+  font-family: 'Roboto Slab';
+  font-size: 12px;
+  text-align: center;
+  color: $tomato;
+}
+
+@mixin coc---mobile {
+  font-family: 'Roboto Slab';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: center;
+  color: $mango;
+}
+
+@mixin coc---tablet {
+  font-family: 'Roboto Slab';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  color: $mango;
+}
+
+@mixin btn--primary--text{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: $tomato;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin landing-image {
+  background-color: $background;
+  background-image: url('../img/background.jpeg');
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-min-width) {
+    background-size: 100% auto;
+    background-position-y: -15rem;
   }
-  
-  @mixin cta---tablet {
-    font-family: 'Roboto';
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
+}
+
+@mixin grid--padding {
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @media screen and (min-width: $tablet-min-width) {
+    padding-left: 45px;
+    padding-right: 45px;
   }
-  
-  @mixin claim---tablet {
-    font-family: 'Roboto Slab';
-    font-size: 32px;
-    text-align: center;
-    color: #ffffff;
+  @media screen and (min-width: $desktop-min-width) {
+    padding-left: 200px;
+    padding-right: 200px;
   }
-  
-  @mixin save-the-date---mobile {
-    font-family: 'Roboto Slab';
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  @mixin video---tablet {
-    font-family: 'Roboto Slab';
-    font-size: 22.4px;
-    text-align: right;
-    color: $charcoal;
-  }
-  
-  @mixin cta---mobile {
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  @mixin Claim---mobile {
-    font-family: 'Roboto Slab';
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  @mixin partners---tablet {
-    font-family: 'Roboto Slab';
-    font-size: 16px;
-    text-align: center;
-    color: $tomato;
-  }
-  
-  @mixin coc---tablet {
-    font-family: 'Roboto Slab';
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: center;
-    color: $mango;
-  }
-  
-  @mixin video---mobile {
-    font-family: 'Roboto Slab';
-    font-size: 14px;
-    text-align: right;
-    color: $charcoal;
-  }
-  
-  @mixin partners---mobile {
-    font-family: 'Roboto Slab';
-    font-size: 12px;
-    text-align: center;
-    color: $tomato;
-  }
-  
-  @mixin coc---mobile {
-    font-family: 'Roboto Slab';
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.25;
-    text-align: center;
-    color: $mango;
-  }
-  
+}

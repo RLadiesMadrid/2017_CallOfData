@@ -485,131 +485,66 @@ template {
   font-weight: 300;
   font-style: normal; }
 
+.oh {
+  overflow: hidden; }
+
 .landing {
   background-color: #010101;
   background-image: url("../img/background.jpeg");
   background-size: contain;
   background-position-x: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 55px; }
   @media screen and (min-width: 768px) {
     .landing {
       background-size: 100% auto;
       background-position-y: -15rem; } }
+  .landing .logo {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .landing .logo img {
+      height: 150px; }
+      @media screen and (min-width: 768px) {
+        .landing .logo img {
+          height: 238px; } }
+  .landing .description {
+    text-align: center; }
+  .landing .intro {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffffff;
+    margin: 30px 0; }
 
 .container-primary {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   box-sizing: border-box; }
-  .container-primary_padding {
-    padding: 0 18px; }
+  .container-primary > div {
+    padding-left: 18px;
+    padding-right: 18px; }
     @media screen and (min-width: 768px) {
-      .container-primary_padding {
-        padding: 0 45px; } }
+      .container-primary > div {
+        padding-left: 45px;
+        padding-right: 45px; } }
     @media screen and (min-width: 1440px) {
-      .container-primary_padding {
-        padding: 0 200px; } }
-
-.container-previously {
-  align-self: flex-end;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px 0; }
-  .container-previously .previously-label {
-    font-family: 'Roboto Slab';
-    font-size: 14px;
-    text-align: right;
-    color: #2c362c;
-    max-width: 125px;
-    margin: 0; }
-    @media screen and (min-width: 768px) {
-      .container-previously .previously-label {
-        font-family: 'Roboto Slab';
-        font-size: 22.4px;
-        text-align: right;
-        color: #2c362c;
-        max-width: 200px; } }
-  .container-previously .previously-icon {
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px white;
-    margin: 0 0 0 20px;
-    height: 0;
-    padding-top: 30px;
-    overflow: hidden;
-    width: 30px;
-    position: relative;
-    color: black; }
-    .container-previously .previously-icon::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 600;
-      font-size: .85em;
-      content: "\f049";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-    @media screen and (min-width: 768px) {
-      .container-previously .previously-icon {
-        padding-top: 45px;
-        width: 45px; }
-        .container-previously .previously-icon::before {
-          font-size: 1.2em; } }
+      .container-primary > div {
+        padding-left: 200px;
+        padding-right: 200px; } }
 
 .container-secondary {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
-  .container-secondary .code-of-conduct {
-    font-family: 'Roboto Slab';
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.25;
-    text-align: center;
-    color: #ff991d;
-    margin: 20px 0;
-    text-decoration: none; }
-    .container-secondary .code-of-conduct::after {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 600;
-      font-size: .85em;
-      margin-left: .35em;
-      content: "\f35d"; }
-    @media screen and (min-width: 768px) {
-      .container-secondary .code-of-conduct {
-        font-family: 'Roboto Slab';
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.5;
-        text-align: center;
-        color: #ff991d;
-        margin: 30px 0; } }
-  .container-secondary .logo img {
-    height: 150px; }
-    @media screen and (min-width: 768px) {
-      .container-secondary .logo img {
-        height: 238px; } }
-  .container-secondary .get-tickets {
-    padding: 15px 45px;
-    border-radius: 6px;
-    background: #ee4613; }
-    .container-secondary .get-tickets-label {
-      font-family: 'Roboto';
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      color: #ffffff;
-      text-decoration: none; }
-      @media screen and (min-width: 768px) {
-        .container-secondary .get-tickets-label {
-          font-family: 'Roboto';
-          font-size: 32px;
-          font-weight: bold;
-          text-align: center;
-          color: #ffffff; } }
   .container-secondary .save-the-date {
     font-family: 'Roboto Slab';
     font-size: 25px;
@@ -640,7 +575,9 @@ template {
         color: #ffffff; } }
 
 .container-collaborators {
-  padding-bottom: 10px; }
+  background-color: #010101;
+  padding-bottom: 10px;
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .container-collaborators {
       padding-bottom: 60px; } }
@@ -656,6 +593,30 @@ template {
         font-size: 16px;
         text-align: center;
         color: #ee4613; } }
+  .container-collaborators .code-of-conduct {
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: center;
+    color: #ff991d;
+    margin: 20px 0;
+    text-decoration: none; }
+    .container-collaborators .code-of-conduct::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: .85em;
+      margin-left: .35em;
+      content: "\f35d"; }
+    @media screen and (min-width: 768px) {
+      .container-collaborators .code-of-conduct {
+        font-family: 'Roboto Slab';
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+        color: #ff991d;
+        margin: 30px 0; } }
   .container-collaborators .communities {
     list-style-type: none;
     margin: 0;
@@ -679,3 +640,20 @@ template {
         .container-collaborators .logo-item .logo-item--codenares {
           height: 58px;
           width: 58px; } }
+
+.btn {
+  border-radius: 4px;
+  display: inline-block; }
+  .btn_primary {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ee4613;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 24px;
+    background-color: #ffffff; }
+  .btn_secondary {
+    background-color: #ff991d;
+    background-color: #ff991d; }
