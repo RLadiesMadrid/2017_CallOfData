@@ -43,8 +43,57 @@
 </head>
 
 <body class="oh">
-  <header>
-  
+  <div class="lateral-menu-container">
+    <input id="input-menu" name="input-menu" type="checkbox" class="hide">
+    <aside class="menu">
+      <header>
+        <img src="assets/img/ii.svg" alt="Call Of Data Logo">
+        <div class="close-container">
+          <i class="fas fa-times"></i>
+        </div>
+      </header>
+
+      <nav>
+          <ul class="links">
+            <li><a href="">Evento</a></li>
+            <li><a href="">C4P</a></li>
+            <li><a href="">Equipo</a></li>
+            <li><a href="">Patrocinio</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+          <a href="https://www.eventbrite.es/e/entradas-call-of-data-2018-43101330239" target="_blank" class="btn btn_primary"
+          title="Obtén tu entrada">Entradas</a>
+
+          <div>
+            <span class="social-networks">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-slack"></i></a>
+            </span>
+          </div>
+      </nav>
+    </aside>
+  </div>
+
+  <header class="header-container">
+    <a href="" class="header-logo">
+      <img src="assets/img/logo_header.svg" alt="Call Of Data Logo">
+    </a>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="">Evento</a></li>
+        <li><a href="">C4P</a></li>
+        <li><a href="">Equipo</a></li>
+        <li><a href="">Patrocinio</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+      <a href="https://www.eventbrite.es/e/entradas-call-of-data-2018-43101330239" target="_blank" class="btn btn_primary"
+      title="Obtén tu entrada">Entradas</a>
+    </nav>
+
+    <div class="hamburger-container">
+      <i class="fas fa-bars"></i>
+    </div>
   </header>
   <main class="container-primary container-primary_padding">
     <div class="landing">
@@ -115,6 +164,8 @@
     ga('create', 'UA-92265009-1', 'auto');
     ga('send', 'pageview');
   </script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

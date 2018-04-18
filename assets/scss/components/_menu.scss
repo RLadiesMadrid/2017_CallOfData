@@ -1,0 +1,59 @@
+.lateral-menu-container{
+
+  input#input-menu:checked ~ aside.menu {
+      left:0;
+  }
+
+  .menu{
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:100%;
+    right: 0;
+    transition: left 1s;
+    opacity: 0.95;
+    background-color: #c91900;
+    background-color: $red;
+    z-index: 10;
+
+    padding-left: 30px;
+
+    header {
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .close-container {
+        @include hamburger--button;
+        background-color: rgba(16, 23, 19, 0.1);
+        
+        i {
+          padding: 20px 14px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px;
+    
+      a {
+          @include menu--option;
+          text-decoration: none;
+      }
+    }
+
+    .social-networks{
+      @include hamburger--button;
+      padding: 20px 30px;
+      
+      i {
+        padding: 20px 14px;
+        color: #ffffff;
+      }
+    }
+  }
+}

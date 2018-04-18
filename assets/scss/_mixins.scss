@@ -1,63 +1,3 @@
-@mixin save-the-date---mobile {
-  font-family: 'Roboto Slab';
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-}
-
-@mixin save-the-date---tablet {
-  font-family: 'Roboto Slab';
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-}
-
-@mixin cta---mobile {
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-}
-
-@mixin cta---tablet {
-  font-family: 'Roboto';
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-}
-
-@mixin Claim---mobile {
-  font-family: 'Roboto Slab';
-  font-size: 18px;
-  text-align: center;
-  color: #ffffff;
-}
-
-@mixin claim---tablet {
-  font-family: 'Roboto Slab';
-  font-size: 32px;
-  text-align: center;
-  color: #ffffff;
-}
-
-@mixin video---mobile {
-  font-family: 'Roboto Slab';
-  font-size: 14px;
-  text-align: right;
-  color: $charcoal;
-}
-
-@mixin video---tablet {
-  font-family: 'Roboto Slab';
-  font-size: 22.4px;
-  text-align: right;
-  color: $charcoal;
-}
-
 @mixin partners---tablet {
   font-family: 'Roboto Slab';
   font-size: 16px;
@@ -91,7 +31,7 @@
 }
 
 @mixin btn--primary--text{
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -99,6 +39,7 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
 
 @mixin landing-image {
   background-color: $background;
@@ -125,4 +66,61 @@
     padding-left: 200px;
     padding-right: 200px;
   }
+}
+
+@mixin nav--option--tablet {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;  
+}
+
+@mixin nav--option--desktop{
+  font-family: Roboto;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;  
+}
+
+@mixin hamburger--button {
+  font-family: FontAwesome;
+  font-size: 20px;
+  text-align: center;
+  color: #ff991d;
+  color: $mango;
+}
+
+@mixin menu--option{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.5;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;    
+}
+
+@mixin landing--description--desktop{
+  font-family: RobotoSlab;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin landing--description--tablet{
+  font-family: 'Roboto Slab';
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin landing--description--mobile{
+  font-family: RobotoSlab;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
 }

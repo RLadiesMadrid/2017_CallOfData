@@ -485,94 +485,22 @@ template {
   font-weight: 300;
   font-style: normal; }
 
-.oh {
-  overflow: hidden; }
-
-.landing {
-  background-color: #010101;
-  background-image: url("../img/background.jpeg");
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  padding-top: 55px;
-  padding-bottom: 55px; }
-  @media screen and (min-width: 768px) {
-    .landing {
-      background-size: 100% auto;
-      background-position-y: -15rem; } }
-  .landing .logo {
-    display: flex;
-    align-content: center;
-    justify-content: center; }
-    .landing .logo img {
-      height: 150px; }
-      @media screen and (min-width: 768px) {
-        .landing .logo img {
-          height: 238px; } }
-  .landing .description {
-    text-align: center; }
-  .landing .intro {
-    font-family: 'Roboto Slab';
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    color: #ffffff;
-    margin: 30px 0; }
-
-.container-primary {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box; }
-  .container-primary > div {
-    padding-left: 18px;
-    padding-right: 18px; }
-    @media screen and (min-width: 768px) {
-      .container-primary > div {
-        padding-left: 45px;
-        padding-right: 45px; } }
-    @media screen and (min-width: 1440px) {
-      .container-primary > div {
-        padding-left: 200px;
-        padding-right: 200px; } }
-
-.container-secondary {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .container-secondary .save-the-date {
-    font-family: 'Roboto Slab';
-    font-size: 25px;
+.btn {
+  border-radius: 4px;
+  display: inline-block; }
+  .btn_primary {
+    font-family: 'Roboto';
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
-    border: 2px solid;
-    display: inline-block;
-    padding: 10px 25px;
-    opacity: 0.48; }
-    @media screen and (min-width: 768px) {
-      .container-secondary .save-the-date {
-        font-family: 'Roboto Slab';
-        font-size: 40px;
-        font-weight: bold;
-        text-align: center;
-        color: #ffffff; } }
-  .container-secondary .claim {
-    font-family: 'Roboto Slab';
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff; }
-    @media screen and (min-width: 768px) {
-      .container-secondary .claim {
-        font-family: 'Roboto Slab';
-        font-size: 32px;
-        text-align: center;
-        color: #ffffff; } }
+    color: #ee4613;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 24px;
+    background-color: #ffffff; }
+  .btn_secondary {
+    background-color: #ff991d;
+    background-color: #ff991d; }
 
 .container-collaborators {
   background-color: #010101;
@@ -641,19 +569,190 @@ template {
           height: 58px;
           width: 58px; } }
 
-.btn {
-  border-radius: 4px;
-  display: inline-block; }
-  .btn_primary {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: bold;
+.header-container {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  background-image: linear-gradient(to right, #c91900, #650100);
+  background-image: linear-gradient(to right, #c91900, #650100);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5); }
+  @media screen and (min-width: 768px) {
+    .header-container {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media screen and (min-width: 1440px) {
+    .header-container {
+      padding-left: 200px;
+      padding-right: 200px; } }
+  .header-container .header-logo img {
+    width: 130px; }
+  .header-container nav {
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      .header-container nav {
+        display: none; } }
+  .header-container .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .header-container .nav-list li {
+      display: inline; }
+    .header-container .nav-list a {
+      font-family: Roboto;
+      font-size: 14px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 20px 7.75px; }
+      @media screen and (min-width: 1440px) {
+        .header-container .nav-list a {
+          font-family: Roboto;
+          font-size: 16px;
+          text-align: center;
+          color: #ffffff;
+          text-transform: uppercase; } }
+  .header-container .hamburger-container {
+    font-family: FontAwesome;
+    font-size: 20px;
     text-align: center;
-    color: #ee4613;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 6px 24px;
-    background-color: #ffffff; }
-  .btn_secondary {
-    background-color: #ff991d;
-    background-color: #ff991d; }
+    color: #ff991d;
+    color: #ff991d; }
+    @media screen and (min-width: 768px) {
+      .header-container .hamburger-container {
+        display: none; } }
+    .header-container .hamburger-container i {
+      background-color: #101713;
+      background-color: #101713;
+      padding: 20px 14px; }
+
+.lateral-menu-container input#input-menu:checked ~ aside.menu {
+  left: 0; }
+
+.lateral-menu-container .menu {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 0;
+  transition: left 1s;
+  opacity: 0.95;
+  background-color: #c91900;
+  background-color: #c91900;
+  z-index: 10;
+  padding-left: 30px; }
+  .lateral-menu-container .menu header {
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .lateral-menu-container .menu header .close-container {
+      font-family: FontAwesome;
+      font-size: 20px;
+      text-align: center;
+      color: #ff991d;
+      color: #ff991d;
+      background-color: rgba(16, 23, 19, 0.1); }
+      .lateral-menu-container .menu header .close-container i {
+        padding: 20px 14px;
+        color: #ffffff; }
+  .lateral-menu-container .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px; }
+    .lateral-menu-container .menu ul a {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 2.5;
+      text-align: left;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none; }
+  .lateral-menu-container .menu .social-networks {
+    font-family: FontAwesome;
+    font-size: 20px;
+    text-align: center;
+    color: #ff991d;
+    color: #ff991d;
+    padding: 20px 30px; }
+    .lateral-menu-container .menu .social-networks i {
+      padding: 20px 14px;
+      color: #ffffff; }
+
+.oh {
+  overflow: hidden; }
+
+.hide {
+  display: none; }
+
+.landing {
+  background-color: #010101;
+  background-image: url("../img/background.jpeg");
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  @media screen and (min-width: 768px) {
+    .landing {
+      background-size: 100% auto;
+      background-position-y: -15rem; } }
+  .landing .logo {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .landing .logo img {
+      height: 150px; }
+      @media screen and (min-width: 768px) {
+        .landing .logo img {
+          height: 238px; } }
+  .landing .description {
+    text-align: center; }
+  .landing .intro {
+    font-family: RobotoSlab;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 768px) {
+      .landing .intro {
+        font-family: 'Roboto Slab';
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #ffffff; } }
+    @media screen and (min-width: 1440px) {
+      .landing .intro {
+        font-family: RobotoSlab;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+        color: #ffffff; } }
+
+.container-primary {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; }
+  .container-primary > div {
+    padding-left: 18px;
+    padding-right: 18px; }
+    @media screen and (min-width: 768px) {
+      .container-primary > div {
+        padding-left: 45px;
+        padding-right: 45px; } }
+    @media screen and (min-width: 1440px) {
+      .container-primary > div {
+        padding-left: 200px;
+        padding-right: 200px; } }

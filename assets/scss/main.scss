@@ -4,8 +4,17 @@
 @import '_breakpoints';
 @import '_mixins';
 
+@import 'components/_button';
+@import 'components/_collaborators';
+@import 'components/_header';
+@import 'components/_menu';
+
 .oh {
   overflow: hidden;
+}
+
+.hide {
+  display: none;
 }
 
 .landing {
@@ -36,17 +45,21 @@
   }
 
   .intro{
-    font-family: 'Roboto Slab';
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    color: #ffffff;
-    margin: 30px 0;
+    @include landing--description--mobile;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include landing--description--tablet;
+    }
+
+    @media screen and (min-width: $desktop-min-width) {
+      @include landing--description--desktop;
+    }
   }
 }
 
 .container-primary {
-	min-height: 100vh;
+	min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
 	box-sizing: border-box;
@@ -56,115 +69,3 @@
   }
 }
 
-.container-secondary{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  .save-the-date {
-    @include save-the-date---mobile;
-    border: 2px solid;
-    display: inline-block;
-    padding: 10px 25px;
-    opacity: 0.48;
-
-    @media screen and (min-width: $tablet-min-width) {
-      @include save-the-date---tablet;
-    }
-  }
-
-  .claim {
-    @include Claim---mobile;
-
-    @media screen and (min-width: $tablet-min-width) {
-      @include claim---tablet;
-    }
-  }
-}
-
-
-.container-collaborators {
-  background-color: #010101;
-  padding-bottom: 10px;
-  @media screen and (min-width: $tablet-min-width) {
-    padding-bottom: 60px;
-  }
-  text-align: center;
-
-  .collaborators-label {
-    @include partners---mobile;
-    text-align: center;
-
-    @media screen and (min-width: $tablet-min-width) {
-      @include partners---tablet;
-    }
-  }
-
-  .code-of-conduct{
-    @include coc---mobile;
-    margin: 20px 0;
-    text-decoration: none;
-
-    &::after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 600;
-        font-size: .85em;
-        margin-left: .35em;
-        content: "\f35d";
-    }
-
-    @media screen and (min-width: $tablet-min-width) {
-      @include coc---tablet;
-      margin: 30px 0;
-    }
-  }
-
-  .communities {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .logo-item {
-    display: inline-block;
-    padding: 0 2.5px;
-
-    img {
-      display: block;
-      height: 30px;
-      width: 30px;
-
-      @media screen and (min-width: $tablet-min-width) {
-        height: 60px;
-        width: 60px;
-      }
-    }
-    .logo-item--codenares {
-      border: 1px solid $codenares;
-      width: 28px;
-      height: 28px;
-      @media screen and (min-width: $tablet-min-width) {
-        height: 58px;
-        width: 58px;
-      }
-    }
-  }
-
-}
-
-.btn {
-  border-radius: 4px;
-  display: inline-block;
-  
-  &_primary{
-    @include btn--primary--text;
-    padding: 6px 24px;
-    background-color: #ffffff;
-  }
-
-  &_secondary {
-    background-color: #ff991d;
-    background-color: $mango;
-  }
-}
