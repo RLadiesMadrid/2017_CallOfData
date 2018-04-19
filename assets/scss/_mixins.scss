@@ -49,8 +49,8 @@
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet-min-width) {
-    background-size: 100% auto;
-    background-position-y: -15rem;
+    background-size: 100% 120%;
+    background-position-y: -5rem;
   }
 }
 
@@ -90,8 +90,8 @@
     padding-right: 40px;
   }
   @media screen and (min-width: $desktop-min-width) {
-    padding-left: 345px;
-    padding-right: 345px;
+    padding-left: 375px;
+    padding-right: 375px;
   }
 }
 

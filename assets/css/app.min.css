@@ -521,8 +521,11 @@ template {
     .header-container {
       padding-left: 200px;
       padding-right: 200px; } }
-  .header-container .header-logo img {
-    width: 130px; }
+  .header-container .header-logo {
+    text-decoration: none;
+    display: flex; }
+    .header-container .header-logo img {
+      width: 130px; }
   .header-container nav {
     display: flex; }
     @media screen and (max-width: 768px) {
@@ -533,7 +536,8 @@ template {
     align-items: center;
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    margin-right: 8px; }
     .header-container .nav-list li {
       display: inline; }
     .header-container .nav-list a {
@@ -643,8 +647,8 @@ template {
       padding-right: 40px; } }
   @media screen and (min-width: 1440px) {
     .tab-nav {
-      padding-left: 345px;
-      padding-right: 345px; } }
+      padding-left: 375px;
+      padding-right: 375px; } }
   .tab-nav-item {
     display: inline-block;
     text-decoration: none;
@@ -699,8 +703,8 @@ template {
       padding-right: 40px; } }
   @media screen and (min-width: 1440px) {
     .tab-content {
-      padding-left: 345px;
-      padding-right: 345px; } }
+      padding-left: 375px;
+      padding-right: 375px; } }
   .tab-content b, .tab-content a {
     font-weight: normal;
     color: #ee4613; }
@@ -723,11 +727,15 @@ template {
       padding-right: 40px; } }
   @media screen and (min-width: 1440px) {
     .newsletter-container {
-      padding-left: 345px;
-      padding-right: 345px; } }
+      padding-left: 375px;
+      padding-right: 375px; } }
   @media screen and (min-width: 768px) {
     .newsletter-container {
       background-size: 100% 100%; } }
+  @media screen and (min-width: 768px) {
+    .newsletter-container {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   .newsletter-container h2 {
     font-family: 'RobotoSlab';
     font-size: 24px;
@@ -736,6 +744,10 @@ template {
     color: #ffffff;
     text-shadow: 0 1px 4px #c91900;
     margin: 0 0 22px; }
+    @media screen and (min-width: 768px) {
+      .newsletter-container h2 {
+        font-size: 45px;
+        margin-bottom: 30px; } }
   .newsletter-container form {
     display: flex; }
   .newsletter-container input {
@@ -754,7 +766,6 @@ template {
       font-weight: normal; }
   .newsletter-container span {
     display: block;
-    opacity: 0.6;
     font-family: Roboto;
     font-size: 12px;
     font-weight: normal;
@@ -904,8 +915,8 @@ template {
   padding-bottom: 55px; }
   @media screen and (min-width: 768px) {
     .landing {
-      background-size: 100% auto;
-      background-position-y: -15rem; } }
+      background-size: 100% 120%;
+      background-position-y: -5rem; } }
   .landing .logo {
     display: flex;
     align-content: center;
@@ -956,5 +967,5 @@ template {
         padding-right: 40px; } }
     @media screen and (min-width: 1440px) {
       .container-primary > div {
-        padding-left: 345px;
-        padding-right: 345px; } }
+        padding-left: 375px;
+        padding-right: 375px; } }
