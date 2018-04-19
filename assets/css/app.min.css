@@ -749,7 +749,23 @@ template {
         font-size: 45px;
         margin-bottom: 30px; } }
   .newsletter-container form {
-    display: flex; }
+    margin: 0 auto;
+    max-width: 494px; }
+  .newsletter-container .newsletter-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    @media screen and (min-width: 530px) {
+      .newsletter-container .newsletter-block {
+        justify-content: space-between; } }
+  .newsletter-container .mc-field-group {
+    width: 100%;
+    margin-bottom: 10px;
+    order: 1; }
+    @media screen and (min-width: 530px) {
+      .newsletter-container .mc-field-group {
+        margin-bottom: 0;
+        flex: 1; } }
   .newsletter-container input {
     opacity: 0.8;
     border-radius: 4px;
@@ -758,23 +774,32 @@ template {
     border: 0;
     padding: 1rem;
     box-sizing: border-box;
-    color: #2c362c; }
+    color: #2c362c;
+    max-height: 50px; }
     .newsletter-container input::placeholder {
       color: #ee4613;
       font-family: Roboto;
       font-size: 14px;
       font-weight: normal; }
-  .newsletter-container span {
+  .newsletter-container .newsletter-form-message {
+    order: 2;
     display: block;
     font-family: Roboto;
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 1.17;
-    text-align: center;
+    text-align: right;
     color: #ffffff;
     padding-right: 10px;
-    margin-top: 11px; }
+    margin-top: 11px;
+    flex: 1; }
+    @media screen and (min-width: 530px) {
+      .newsletter-container .newsletter-form-message {
+        width: 100%;
+        flex: initial;
+        order: 3;
+        text-align: center; } }
   .newsletter-container button {
     border-radius: 4px;
     background: #ff991d;
@@ -783,8 +808,28 @@ template {
     font-weight: 500;
     color: #ffffff;
     border: 0;
+    max-height: 50px;
     padding: 1rem;
-    margin-left: 5px; }
+    margin-left: 5px;
+    order: 3; }
+    @media screen and (min-width: 530px) {
+      .newsletter-container button {
+        order: 2; } }
+  .newsletter-container .newsletter-responses {
+    order: 4;
+    margin-top: 15px;
+    width: 100%; }
+  .newsletter-container .response {
+    text-align: center;
+    color: #ff991d;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    background: rgba(141, 18, 0, 0.8);
+    border-radius: 6px;
+    padding: 15px; }
+    .newsletter-container .response a {
+      color: #fff; }
 
 .footer-container {
   background: linear-gradient(0deg, black 0%, #c91900 187%);

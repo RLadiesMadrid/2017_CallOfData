@@ -20,24 +20,5 @@ $(document).ready(function () {
       $('.js-tab ' + $id).addClass('tab-content--on');
     });
 
-    $('.js-form-newsletter').submit(function (event) {
-      event.preventDefault();
-      const $email = $(this).find('input').val();
-      const settings = {
-        crossDomain: true,
-        url: 'https://us14.api.mailchimp.com/3.0/lists/419bdbc491/members',
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": "",
-          "Cache-Control": "no-cache"
-        },
-        data: { email_address: $email, status: 'subscribed' }
-      }
-
-      $.ajax(settings)
-        .then(response => $('.js-newsletter-form-message').text('Te has incrito correctamente! Enhorabuena'))
-        .catch(error => $('.js-newsletter-form-message').text('Algo no ha funcionado! Inténtalo luego más tarde'));
-    });
   }
 });
