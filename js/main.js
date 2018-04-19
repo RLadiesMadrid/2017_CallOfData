@@ -19,5 +19,10 @@ $(document).ready(function () {
       $(this).addClass('tab-nav-item--on');
       $('.js-tab ' + $id).addClass('tab-content--on');
     });
+
+    $('.js-form-newsletter').submit(function (event) {
+      const $email = $(this).find('input').val();
+      console.log($email);
+    });
   }
 });
