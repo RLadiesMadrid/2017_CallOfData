@@ -8,6 +8,7 @@
 @import 'components/_header';
 @import 'components/_menu';
 @import 'components/_tab';
+@import 'components/_newsletter';
 @import 'components/_footer';
 @import 'components/_links';
 @import 'components/_collaborators';
@@ -64,7 +65,7 @@
 	box-sizing: border-box;
 
   & > div {
-    @include grid--padding;
+    @include grid--padding-content;
   }
 }
 

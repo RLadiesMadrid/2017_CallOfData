@@ -54,6 +54,19 @@
   }
 }
 
+@mixin newsletter-image {
+  background-color: $background;
+  background-image: url('../img/background_newsletter.jpg');
+  background-size: 100% 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-min-width) {
+    background-size: 100% 100%;
+
+  }
+}
+
 @mixin grid--padding {
   padding-left: 18px;
   padding-right: 18px;
@@ -65,6 +78,20 @@
   @media screen and (min-width: $desktop-min-width) {
     padding-left: 200px;
     padding-right: 200px;
+  }
+}
+
+@mixin grid--padding-content {
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @media screen and (min-width: $tablet-min-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: $desktop-min-width) {
+    padding-left: 345px;
+    padding-right: 345px;
   }
 }
 

@@ -4,10 +4,10 @@
 .tab {
 
   &-nav {
+    @include grid--padding-content;
     display: flex;
     background: $white;
     padding: 10px 20px 0px;
-    @include grid--padding;
 
     &-item {
       display: inline-block;
@@ -64,7 +64,7 @@
     font-size: 18px;
     padding-top: 30px;
     padding-bottom: 60px;
-    @include grid--padding;
+    @include grid--padding-content;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;

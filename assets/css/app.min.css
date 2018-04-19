@@ -561,8 +561,6 @@ template {
       .header-container .hamburger-container {
         display: none; } }
     .header-container .hamburger-container i {
-      background-color: #101713;
-      background-color: #101713;
       padding: 20px 14px; }
 
 .lateral-menu-container input#input-menu:checked ~ aside.menu {
@@ -619,19 +617,19 @@ template {
       color: #ffffff; }
 
 .tab-nav {
+  padding-left: 18px;
+  padding-right: 18px;
   display: flex;
   background: #ffffff;
-  padding: 10px 20px 0px;
-  padding-left: 18px;
-  padding-right: 18px; }
+  padding: 10px 20px 0px; }
   @media screen and (min-width: 768px) {
     .tab-nav {
-      padding-left: 45px;
-      padding-right: 45px; } }
+      padding-left: 40px;
+      padding-right: 40px; } }
   @media screen and (min-width: 1440px) {
     .tab-nav {
-      padding-left: 200px;
-      padding-right: 200px; } }
+      padding-left: 345px;
+      padding-right: 345px; } }
   .tab-nav-item {
     display: inline-block;
     text-decoration: none;
@@ -682,20 +680,88 @@ template {
   display: none; }
   @media screen and (min-width: 768px) {
     .tab-content {
-      padding-left: 45px;
-      padding-right: 45px; } }
+      padding-left: 40px;
+      padding-right: 40px; } }
   @media screen and (min-width: 1440px) {
     .tab-content {
-      padding-left: 200px;
-      padding-right: 200px; } }
+      padding-left: 345px;
+      padding-right: 345px; } }
   .tab-content b, .tab-content a {
     font-weight: normal;
     color: #ee4613; }
   .tab-content--on {
     display: block; }
 
+.newsletter-container {
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: #010101;
+  background-image: url("../img/background_newsletter.jpg");
+  background-size: 100% 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 45px; }
+  @media screen and (min-width: 768px) {
+    .newsletter-container {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media screen and (min-width: 1440px) {
+    .newsletter-container {
+      padding-left: 345px;
+      padding-right: 345px; } }
+  @media screen and (min-width: 768px) {
+    .newsletter-container {
+      background-size: 100% 100%; } }
+  .newsletter-container h2 {
+    font-family: 'RobotoSlab';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 1px 4px #c91900;
+    margin: 0 0 22px; }
+  .newsletter-container form {
+    display: flex; }
+  .newsletter-container input {
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: #2c362c; }
+    .newsletter-container input::placeholder {
+      color: #ee4613;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal; }
+  .newsletter-container span {
+    display: block;
+    opacity: 0.6;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    text-align: center;
+    color: #ffffff;
+    padding-right: 10px;
+    margin-top: 11px; }
+  .newsletter-container button {
+    border-radius: 4px;
+    background: #ff991d;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 0;
+    padding: 1rem;
+    margin-left: 5px; }
+
 .footer-container {
-  background: linear-gradient(0deg, black 0%, #c91900 100%);
+  background: linear-gradient(0deg, black 0%, #c91900 187%);
   padding-bottom: 30px; }
   .footer-container .authors {
     padding-top: 16px;
@@ -739,8 +805,8 @@ template {
 .container-collaborators {
   padding-top: 1rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #c91900;
-  border-bottom: 1px solid #c91900;
+  border-top: 1px solid rgba(201, 25, 0, 0.3);
+  border-bottom: 1px solid rgba(201, 25, 0, 0.3);
   text-align: center; }
   @media screen and (min-width: 768px) {
     .container-collaborators {
@@ -865,9 +931,9 @@ template {
     padding-right: 18px; }
     @media screen and (min-width: 768px) {
       .container-primary > div {
-        padding-left: 45px;
-        padding-right: 45px; } }
+        padding-left: 40px;
+        padding-right: 40px; } }
     @media screen and (min-width: 1440px) {
       .container-primary > div {
-        padding-left: 200px;
-        padding-right: 200px; } }
+        padding-left: 345px;
+        padding-right: 345px; } }
