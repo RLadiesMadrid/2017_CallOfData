@@ -584,6 +584,10 @@ template {
     bottom: 0;
     transition: left 1s;
     z-index: 10;
+    background-image: url("../img/callofdata-vertical.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position-y: 5rem;
     padding-left: 30px; }
     .lateral-menu-container .menu header {
       padding-right: 0;
