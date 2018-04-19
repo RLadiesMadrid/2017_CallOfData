@@ -23,7 +23,21 @@ $(document).ready(function () {
     $('.js-form-newsletter').submit(function (event) {
       event.preventDefault();
       const $email = $(this).find('input').val();
-      console.log($email);
+      const settings = {
+        crossDomain: true,
+        url: 'https://us14.api.mailchimp.com/3.0/lists/419bdbc491/members',
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Basic YW55c3RyaW5nOjRhNzQzMTczOTJjMmM0ZTFiODViMDUxYTg5ZjdjZTlkLXVzMTQ=",
+          "Cache-Control": "no-cache"
+        },
+        data: { email_address: $email, status: 'subscribed' }
+      }
+
+      $.ajax(settings)
+        .then(response => $('.js-newsletter-form-message').text('Te has incrito correctamente! Enhorabuena'))
+        .catch(error => $('.js-newsletter-form-message').text('Algo no ha funcionado! Inténtalo luego más tarde'));
     });
   }
 });
