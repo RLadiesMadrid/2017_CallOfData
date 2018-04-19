@@ -5,14 +5,12 @@
 @import '_mixins';
 
 @import 'components/_button';
-@import 'components/_collaborators';
 @import 'components/_header';
 @import 'components/_menu';
 @import 'components/_tab';
-
-.oh {
-  overflow: hidden;
-}
+@import 'components/_footer';
+@import 'components/_links';
+@import 'components/_collaborators';
 
 .hide {
   display: none;

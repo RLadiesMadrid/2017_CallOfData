@@ -1,18 +1,17 @@
 .lateral-menu-container{
-
+  
   input#input-menu:checked ~ aside.menu {
       left:0;
   }
 
   .menu{
-    height: 100vh;
-    position: absolute;
+    position: fixed;
     top:0;
     left:100%;
     right: 0;
+    bottom: 0;
     transition: left 1s;
     opacity: 0.95;
-    background-color: #c91900;
     background-color: $red;
     z-index: 10;
 
