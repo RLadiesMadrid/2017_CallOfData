@@ -20,38 +20,24 @@ $(document).ready(function () {
       $('.js-tab ' + $id).addClass('tab-content--on');
     });
 
-    $('.menu .links li').each(function(){
-      $(this).on('click', function(event){
-        $('.lateral-menu-container, .lateral-menu-container .menu').removeClass('menu--on');
-      });
-    });
-
     $('.js-form-newsletter').submit(function (event) {
       event.preventDefault();
       const $email = $(this).find('input').val();
       const settings = {
-        url: 'https://us14.api.mailchimp.com/2.0/lists/subscribe.json',
-        method: 'GET',
-        success: function (data) { $('.js-newsletter-form-message').text('Te has incrito correctamente! Enhorabuena') },
-        error: function (data) { $('.js-newsletter-form-message').text('Algo ha debido ir mal! Inténtelo más tarde') },
-        dataType: "jsonp",
-        jsonp: false,
-        jsonpCallback: "myJsonMethod",
-        data: {
-          apikey: '4a74317392c2c4e1b85b051a89f7ce9d-us14',
-          id: '419bdbc491',
-          send_welcome: false,
-          email: {
-            email: $email
-          }
-        }
+        crossDomain: true,
+        url: 'https://us14.api.mailchimp.com/3.0/lists/419bdbc491/members',
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Basic YW55c3RyaW5nOjRhNzQzMTczOTJjMmM0ZTFiODViMDUxYTg5ZjdjZTlkLXVzMTQ=",
+          "Cache-Control": "no-cache"
+        },
+        data: { email_address: $email, status: 'subscribed' }
       }
 
-      $.ajax(settings);
+      $.ajax(settings)
+        .then(response => $('.js-newsletter-form-message').text('Te has incrito correctamente! Enhorabuena'))
+        .catch(error => $('.js-newsletter-form-message').text('Algo no ha funcionado! Inténtalo luego más tarde'));
     });
   }
 });
-
-function callback() {
-  console.log('funciona')
-} 
