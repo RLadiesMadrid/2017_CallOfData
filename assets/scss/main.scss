@@ -47,6 +47,11 @@
   .intro{
     @include landing--description--mobile;
     margin-bottom: 30px;
+    line-height: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
 
     @media screen and (min-width: $tablet-min-width) {
       @include landing--description--tablet;
