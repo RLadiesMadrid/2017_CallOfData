@@ -564,22 +564,23 @@ template {
       padding: 20px 14px; }
 
 .lateral-menu-container.menu--on, .menu.menu--on {
-  left: 0 !important; }
+  transform: translateX(0%) !important; }
 
 .lateral-menu-container {
+  transform: translateX(100%);
   opacity: 0.95;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 100%;
+  left: 0;
   right: 0;
   z-index: 2;
   background-color: #c91900;
-  transition: left 1s; }
+  transition: transform 1s; }
   .lateral-menu-container .menu {
     position: fixed;
     top: 0;
-    left: 100%;
+    left: 0;
     right: 0;
     bottom: 0;
     transition: left 1s;
@@ -662,7 +663,7 @@ template {
         .tab-nav-item p small::before {
           content: '|';
           font-weight: normal;
-          margin-left: 7px;
+          margin-left: 5px;
           margin-right: 5px; }
     .tab-nav-item span {
       font-family: Roboto;

@@ -1,24 +1,26 @@
 .lateral-menu-container, .menu {
   &.menu--on {
-    left:0 !important;
+   // left:0 !important;
+   transform: translateX(0%) !important;
   }
 }
 
 .lateral-menu-container{
+  transform: translateX(100%);
   opacity: 0.95;
   position: fixed;
   top: 0;
   bottom: 0;
-  left:100%;
+  left:0;
   right: 0;
   z-index: 2;
   background-color: $red;
-  transition: left 1s;
+  transition: transform 1s;
 
   .menu{
     position: fixed;
     top:0;
-    left:100%;
+    left:0;
     right: 0;
     bottom: 0;
     transition: left 1s;
