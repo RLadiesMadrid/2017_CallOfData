@@ -29,7 +29,7 @@ $(document).ready(function () {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Basic YW55c3RyaW5nOjRhNzQzMTczOTJjMmM0ZTFiODViMDUxYTg5ZjdjZTlkLXVzMTQ=",
+          "Authorization": "",
           "Cache-Control": "no-cache"
         },
         data: { email_address: $email, status: 'subscribed' }
