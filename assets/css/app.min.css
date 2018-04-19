@@ -414,15 +414,15 @@ template {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'RobotoSlab';
   src: url("../fonts/RobotoSlab-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-Medium';
   src: url("../fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -432,8 +432,8 @@ template {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -444,25 +444,25 @@ template {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-BoldItalic';
   src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'RobotoSlab-Light';
   src: url("../fonts/RobotoSlab-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-BlackItalic';
   src: url("../fonts/Roboto-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'RobotoSlab';
   src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
@@ -686,6 +686,82 @@ template {
       padding: 20px 14px;
       color: #ffffff; }
 
+.tab-nav {
+  display: flex;
+  background: #ffffff;
+  padding: 10px 20px 0px;
+  padding-left: 18px;
+  padding-right: 18px; }
+  @media screen and (min-width: 768px) {
+    .tab-nav {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media screen and (min-width: 1440px) {
+    .tab-nav {
+      padding-left: 200px;
+      padding-right: 200px; } }
+  .tab-nav-item {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px 10px; }
+    .tab-nav-item p {
+      font-family: 'RobotoSlab';
+      font-size: 48.1px;
+      font-weight: bold;
+      color: #9b9b9b;
+      padding: 0;
+      margin: 0; }
+      .tab-nav-item p small {
+        font-size: 19.2px;
+        color: #2c362c;
+        font-weight: bold; }
+        .tab-nav-item p small::before {
+          content: '|';
+          font-weight: normal;
+          margin-left: 7px;
+          margin-right: 5px; }
+    .tab-nav-item span {
+      font-family: Roboto;
+      display: block;
+      font-size: 12.8px;
+      font-weight: 300;
+      color: #2c362c; }
+    .tab-nav-item::hover {
+      cursor: pointer; }
+    .tab-nav-item--on {
+      border-bottom: 5px solid #ff991d; }
+      .tab-nav-item--on p {
+        color: #ee4613; }
+
+.tab-content {
+  font-family: 'Roboto-Regular';
+  background: #eeeeee;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2c362c;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .tab-content {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media screen and (min-width: 1440px) {
+    .tab-content {
+      padding-left: 200px;
+      padding-right: 200px; } }
+  .tab-content b, .tab-content a {
+    font-weight: normal;
+    color: #ee4613; }
+  .tab-content--on {
+    display: block; }
+
 .oh {
   overflow: hidden; }
 
@@ -720,21 +796,21 @@ template {
   .landing .description {
     text-align: center; }
   .landing .intro {
-    font-family: RobotoSlab;
+    font-family: 'RobotoSlab';
     font-size: 15px;
     text-align: center;
     color: #ffffff;
     margin-bottom: 30px; }
     @media screen and (min-width: 768px) {
       .landing .intro {
-        font-family: 'Roboto Slab';
+        font-family: 'RobotoSlab';
         font-size: 20px;
         line-height: 1.5;
         text-align: center;
         color: #ffffff; } }
     @media screen and (min-width: 1440px) {
       .landing .intro {
-        font-family: RobotoSlab;
+        font-family: 'RobotoSlab';
         font-size: 24px;
         line-height: 1.25;
         text-align: center;
