@@ -779,6 +779,7 @@ template {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none; }
   @media screen and (min-width: 768px) {
     .links-container {
@@ -800,7 +801,7 @@ template {
       margin: 0 6px; }
     .links-container li:last-child::after {
       content: '';
-      padding: 0; }
+      margin: 0; }
 
 .container-collaborators {
   padding-top: 1rem;
