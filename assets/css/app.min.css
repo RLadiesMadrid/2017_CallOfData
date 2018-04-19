@@ -619,10 +619,12 @@ template {
       text-align: center;
       color: #ff991d;
       color: #ff991d;
-      padding: 20px 30px; }
+      padding: 20px 20px; }
       .lateral-menu-container .menu .social-networks i {
         padding: 20px 14px;
         color: #ffffff; }
+      .lateral-menu-container .menu .social-networks a {
+        text-decoration: none; }
 
 .tab-nav {
   padding-left: 18px;
