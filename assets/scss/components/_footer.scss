@@ -3,7 +3,17 @@
 @import '../_mixins';
 
 .footer-container {
-  @include grid--padding;
 
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(201,25,0,1) 100%);
+  padding-bottom: 30px;
+
+  .authors {
+    padding-top: 16px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    color: $white;
+  }
 }

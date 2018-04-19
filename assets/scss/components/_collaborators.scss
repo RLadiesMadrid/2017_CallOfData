@@ -1,5 +1,9 @@
 .container-collaborators {
-  padding-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid $red;
+  border-bottom: 1px solid $red;
+
   @media screen and (min-width: $tablet-min-width) {
     padding-bottom: 60px;
   }
