@@ -893,7 +893,7 @@ template {
 .landing {
   background-color: #010101;
   background-image: url("../img/background.jpeg");
-  background-size: contain;
+  background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
   display: flex;

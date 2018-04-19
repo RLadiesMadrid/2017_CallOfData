@@ -20,6 +20,12 @@ $(document).ready(function () {
       $('.js-tab ' + $id).addClass('tab-content--on');
     });
 
+    $('.menu .links li').each(function(){
+      $(this).on('click', function(event){
+        $('.lateral-menu-container, .lateral-menu-container .menu').removeClass('menu--on');
+      });
+    });
+
     $('.js-form-newsletter').submit(function (event) {
       event.preventDefault();
       const $email = $(this).find('input').val();
