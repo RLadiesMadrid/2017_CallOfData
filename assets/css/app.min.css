@@ -563,58 +563,66 @@ template {
     .header-container .hamburger-container i {
       padding: 20px 14px; }
 
-.lateral-menu-container input#input-menu:checked ~ aside.menu {
-  left: 0; }
+.lateral-menu-container.menu--on, .menu.menu--on {
+  left: 0 !important; }
 
-.lateral-menu-container .menu {
+.lateral-menu-container {
+  opacity: 0.95;
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 100%;
   right: 0;
-  bottom: 0;
-  transition: left 1s;
-  opacity: 0.95;
+  z-index: 2;
   background-color: #c91900;
-  z-index: 10;
-  padding-left: 30px; }
-  .lateral-menu-container .menu header {
-    padding-right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .lateral-menu-container .menu header .close-container {
+  transition: left 1s; }
+  .lateral-menu-container .menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    transition: left 1s;
+    z-index: 10;
+    padding-left: 30px; }
+    .lateral-menu-container .menu header {
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .lateral-menu-container .menu header .close-container {
+        font-family: FontAwesome;
+        font-size: 20px;
+        text-align: center;
+        color: #ff991d;
+        color: #ff991d;
+        background-color: rgba(16, 23, 19, 0.1); }
+        .lateral-menu-container .menu header .close-container i {
+          padding: 20px 14px;
+          color: #ffffff; }
+    .lateral-menu-container .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px; }
+      .lateral-menu-container .menu ul a {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 2.5;
+        text-align: left;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none; }
+    .lateral-menu-container .menu .social-networks {
       font-family: FontAwesome;
       font-size: 20px;
       text-align: center;
       color: #ff991d;
       color: #ff991d;
-      background-color: rgba(16, 23, 19, 0.1); }
-      .lateral-menu-container .menu header .close-container i {
+      padding: 20px 30px; }
+      .lateral-menu-container .menu .social-networks i {
         padding: 20px 14px;
         color: #ffffff; }
-  .lateral-menu-container .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 14px; }
-    .lateral-menu-container .menu ul a {
-      font-family: Roboto;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 2.5;
-      text-align: left;
-      color: #ffffff;
-      text-transform: uppercase;
-      text-decoration: none; }
-  .lateral-menu-container .menu .social-networks {
-    font-family: FontAwesome;
-    font-size: 20px;
-    text-align: center;
-    color: #ff991d;
-    color: #ff991d;
-    padding: 20px 30px; }
-    .lateral-menu-container .menu .social-networks i {
-      padding: 20px 14px;
-      color: #ffffff; }
 
 .tab-nav {
   padding-left: 18px;

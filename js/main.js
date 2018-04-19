@@ -3,11 +3,11 @@ $(document).ready(function () {
 
   function init() {
     $('.close-container').click(function () {
-      $('#input-menu').prop('checked', false);
+      $('.lateral-menu-container, .lateral-menu-container .menu').removeClass('menu--on');
     });
 
     $('.hamburger-container').click(function () {
-      $('#input-menu').prop('checked', true);
+      $('.lateral-menu-container, .lateral-menu-container .menu').addClass('menu--on');
     });
 
     $('.js-tab .tab-nav-item').click(function (event) {
