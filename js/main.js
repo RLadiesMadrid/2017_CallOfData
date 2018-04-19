@@ -21,6 +21,7 @@ $(document).ready(function () {
     });
 
     $('.js-form-newsletter').submit(function (event) {
+      event.preventDefault();
       const $email = $(this).find('input').val();
       console.log($email);
     });
