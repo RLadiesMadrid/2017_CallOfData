@@ -1,0 +1,122 @@
+.newsletter-container {
+  @include grid--padding-content;
+  @include newsletter-image;
+
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  @media screen and (min-width: $tablet-min-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  h2 {
+    font-family: 'RobotoSlab';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    text-shadow: 0 1px 4px $red;
+    margin: 0 0 22px;
+
+    @media screen and (min-width: $tablet-min-width) {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 494px;
+  }
+  .newsletter-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    @media screen and (min-width: 530px) {
+      justify-content: space-between;
+    }
+  }
+  .mc-field-group {
+    width: 100%;
+    margin-bottom: 10px;
+    order: 1;
+    @media screen and (min-width: 530px) {
+      margin-bottom: 0;
+      flex: 1;
+    }
+  }
+
+  input {
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: $charcoal;
+    max-height: 50px;
+
+    &::placeholder {
+      color: $tomato;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .newsletter-form-message {
+    order: 2;
+    display: block;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    text-align: right;
+    color: $white;
+    padding-right: 10px;
+    margin-top: 11px;
+    flex: 1;
+    @media screen and (min-width: 530px) {
+      width: 100%;
+      flex: initial;
+      order: 3;
+      text-align: center;
+    }
+  }
+
+  button {
+    border-radius: 4px;
+    background: $mango;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    border: 0;
+    max-height: 50px;
+    padding: 1rem;
+    margin-left: 5px;
+    order: 3;
+    @media screen and (min-width: 530px) {
+      order: 2;
+    }
+  }
+  .newsletter-responses {
+    order: 4;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .response {
+    text-align: center;
+    color: $mango;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    background: rgba(mix(#000,$red, 30%), .8);
+    border-radius: 6px;
+    padding: 15px;
+    a {color: #fff;}
+  }
+}

@@ -1,0 +1,70 @@
+.container-collaborators {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(201, 25, 0, 0.3);
+  border-bottom: 1px solid rgba(201, 25, 0, 0.3);
+
+  @media screen and (min-width: $tablet-min-width) {
+    padding-bottom: 60px;
+  }
+  text-align: center;
+
+  .collaborators-label {
+    @include partners---mobile;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include partners---tablet;
+    }
+  }
+
+  .code-of-conduct{
+    @include coc---mobile;
+    margin: 20px 0;
+    text-decoration: none;
+
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: .85em;
+        margin-left: .35em;
+        content: "\f35d";
+    }
+
+    @media screen and (min-width: $tablet-min-width) {
+      @include coc---tablet;
+      margin: 30px 0;
+    }
+  }
+
+  .communities {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-item {
+    display: inline-block;
+    padding: 0 2.5px;
+
+    img {
+      display: block;
+      height: 30px;
+      width: 30px;
+
+      @media screen and (min-width: $tablet-min-width) {
+        height: 60px;
+        width: 60px;
+      }
+    }
+    .logo-item--codenares {
+      border: 1px solid $codenares;
+      width: 28px;
+      height: 28px;
+      @media screen and (min-width: $tablet-min-width) {
+        height: 58px;
+        width: 58px;
+      }
+    }
+  }
+}

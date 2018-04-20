@@ -1,0 +1,77 @@
+.lateral-menu-container, .menu {
+  &.menu--on {
+   // left:0 !important;
+   transform: translateX(0%) !important;
+  }
+}
+
+.lateral-menu-container{
+  transform: translateX(100%);
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  z-index: 2;
+  background-color: $red;
+  transition: transform 1s;
+
+  .menu{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    transition: left 1s;
+    z-index: 10;
+    background-image: url('../img/callofdata-vertical.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position-y: 5rem;
+
+    padding-left: 30px;
+
+    header {
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .close-container {
+        @include hamburger--button;
+        background-color: rgba(16, 23, 19, 0.1);
+        
+        i {
+          padding: 20px 14px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px;
+    
+      a {
+          @include menu--option;
+          text-decoration: none;
+      }
+    }
+
+    .social-networks{
+      @include hamburger--button;
+      padding: 20px 20px;
+      
+      i {
+        padding: 20px 14px;
+        color: #ffffff;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

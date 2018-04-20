@@ -1,0 +1,18 @@
+
+@import '../_colors';
+@import '../_mixins';
+
+.footer-container {
+  background: linear-gradient(0deg, black 0%, #c91900 187%);
+  padding-bottom: 30px;
+
+  .authors {
+    padding-top: 16px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    color: $white;
+  }
+}

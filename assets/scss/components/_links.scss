@@ -1,0 +1,33 @@
+@import '../_colors';
+
+.links-container {
+  @include grid--padding;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  a {
+    color: $white;
+    font-family: Roboto;
+    font-size: 13px;
+    text-decoration: none;
+
+  }
+  
+  li {
+    color: $mango;
+    
+    &::after {
+      content: '|';
+      margin: 0 6px;
+    }
+    
+    &:last-child::after {
+      content: '';
+      margin: 0;
+    }
+  }
+}

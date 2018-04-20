@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 4px;
+  display: inline-block;
+  
+  &_primary{
+    @include btn--primary--text;
+    padding: 6px 24px;
+    background-color: #ffffff;
+  }
+
+  &_secondary {
+    background-color: #ff991d;
+    background-color: $mango;
+  }
+}
