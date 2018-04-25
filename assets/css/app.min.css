@@ -949,8 +949,8 @@ template {
 .landing {
   background-color: #010101;
   background-image: url("../img/background.jpeg");
-  background-size: cover;
-  background-position-x: center;
+  background-size: auto 120%;
+  background-position: center bottom;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -960,8 +960,7 @@ template {
   padding-bottom: 55px; }
   @media screen and (min-width: 768px) {
     .landing {
-      background-size: 100% 120%;
-      background-position-y: -5rem; } }
+      background-size: cover; } }
   .landing .logo {
     display: flex;
     align-content: center;

@@ -44,13 +44,12 @@
 @mixin landing-image {
   background-color: $background;
   background-image: url('../img/background.jpeg');
-  background-size: cover;  
-  background-position-x: center;
+  background-size: auto 120%;
+  background-position: center bottom;
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet-min-width) {
-    background-size: 100% 120%;
-    background-position-y: -5rem;
+    background-size: cover;
   }
 }
 
@@ -100,7 +99,7 @@
   font-size: 14px;
   text-align: center;
   color: #ffffff;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 @mixin nav--option--desktop{
@@ -108,7 +107,7 @@
   font-size: 16px;
   text-align: center;
   color: #ffffff;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 @mixin hamburger--button {
@@ -126,7 +125,7 @@
   line-height: 2.5;
   text-align: left;
   color: #ffffff;
-  text-transform: uppercase;    
+  text-transform: uppercase;
 }
 
 @mixin landing--description--desktop{
