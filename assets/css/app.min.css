@@ -997,6 +997,11 @@ template {
         line-height: 1.25;
         text-align: center;
         color: #ffffff; } }
+    .landing .intro a {
+      font-family: 'Roboto Slab';
+      font-weight: 300;
+      line-height: 1.5;
+      color: #ff991d; }
 
 .container-primary {
   display: flex;

@@ -60,6 +60,13 @@
     @media screen and (min-width: $desktop-min-width) {
       @include landing--description--desktop;
     }
+
+    a {
+      font-family: 'Roboto Slab';
+      font-weight: 300;
+      line-height: 1.5;
+      color: $mango;
+    }
   }
 }
 
