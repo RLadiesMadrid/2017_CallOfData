@@ -527,7 +527,8 @@ template {
     .header-container .header-logo img {
       width: 130px; }
   .header-container nav {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     @media screen and (max-width: 768px) {
       .header-container nav {
         display: none; } }
@@ -566,6 +567,18 @@ template {
         display: none; } }
     .header-container .hamburger-container i {
       padding: 20px 14px; }
+  .header-container .link-lang {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ff991d;
+    text-decoration: none;
+    margin-left: 1rem; }
 
 .lateral-menu-container.menu--on, .menu.menu--on {
   transform: translateX(0%) !important; }
