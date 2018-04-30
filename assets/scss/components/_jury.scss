@@ -1,0 +1,103 @@
+.jury-container {
+  @include grid--padding-content;
+  background-image: linear-gradient(to bottom, #ffffff, #dfdcdc);
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet-min-width) {
+    padding-top: 45px;
+  }
+
+  @media screen and (min-width: $desktop-min-width) {
+    padding-left: 248px;
+    padding-right: 248px;
+  }
+
+  h2 {
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: $almost-black;
+    border-left: 5px solid $red;
+    padding: 0 15px;
+  }
+}
+
+.jury-members {
+  display: grid;
+  grid-column-gap: 1rem;
+
+  @media screen and (min-width: $tablet-min-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.jury-member {
+  &-header {
+    display: flex;
+    padding-bottom: 1rem;
+    margin-top: 45px;
+
+    img {
+      width: 138px;
+      height: 138px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 15px;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: $red;
+      }
+    }
+  }
+
+  &-body {
+    h3 {
+      font-family: 'Roboto Slab';
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.88;
+      letter-spacing: normal;
+      text-align: left;
+      color: $almost-black;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      text-align: left;
+      color: $charcoal;
+
+      b {
+        font-weight: bold;
+      }
+    }
+  }
+}
