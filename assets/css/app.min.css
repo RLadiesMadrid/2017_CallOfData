@@ -728,7 +728,8 @@ template {
   padding-left: 18px;
   padding-right: 18px;
   background-image: linear-gradient(to bottom, #ffffff, #dfdcdc);
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  padding-top: 30px; }
   @media screen and (min-width: 768px) {
     .jury-container {
       padding-left: 40px;
@@ -755,7 +756,8 @@ template {
     text-align: left;
     color: #101713;
     border-left: 5px solid #c91900;
-    padding: 0 15px; }
+    padding: 0 15px;
+    margin: 0; }
 
 .jury-members {
   display: grid;
