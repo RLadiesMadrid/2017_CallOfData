@@ -20,5 +20,18 @@ $(document).ready(function () {
       $('.js-tab ' + $id).addClass('tab-content--on');
     });
 
+    $('[data-id=change-lang]').each(function(index){
+      const elem = $(this);
+      if(lang === 'en-GB'){
+        const text = elem.hasClass('js-change-lang') ? 'Spanish' : 'ES >';
+        elem.attr('href', '/?lang=es');
+        elem.text(text);
+      } else {
+        const text = elem.hasClass('js-change-lang') ? 'English' : 'EN >';
+        elem.attr('href', '/?lang=en');
+        elem.text(text);
+      }
+    })
+
   }
 });
