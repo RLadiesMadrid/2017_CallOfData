@@ -584,6 +584,7 @@ template {
   transform: translateX(0%) !important; }
 
 .lateral-menu-container {
+  transition: transform 1s;
   transform: translateX(100%);
   opacity: 0.95;
   position: fixed;
@@ -592,15 +593,13 @@ template {
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: #c91900;
-  transition: transform 1s; }
+  background-color: #c91900; }
   .lateral-menu-container .menu {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    transition: left 1s;
     z-index: 10;
     background-image: url("../img/callofdata-vertical.png");
     background-repeat: no-repeat;
