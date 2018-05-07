@@ -43,26 +43,27 @@
 
 @mixin landing-image {
   background-color: $background;
-  background-image: url('../img/background.jpeg');
+  background-image: url('../img/backgrounds/background_mobile.jpeg');
   background-size: auto 120%;
   background-position: center bottom;
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet-min-width) {
     background-size: cover;
+    background-image: url('../img/backgrounds/background.jpeg');
   }
 }
 
 @mixin newsletter-image {
   background-color: $background;
-  background-image: url('../img/background_newsletter.jpg');
+  background-image: url('../img/backgrounds/background_newsletter_mobile.jpg');
   background-size: 100% 100%;
   background-position-x: center;
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet-min-width) {
     background-size: 100% 100%;
-
+    background-image: url('../img/backgrounds/background_newsletter.jpg');
   }
 }
 

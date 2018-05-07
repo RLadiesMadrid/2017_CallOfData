@@ -584,6 +584,7 @@ template {
   transform: translateX(0%) !important; }
 
 .lateral-menu-container {
+  transition: transform 1s;
   transform: translateX(100%);
   opacity: 0.95;
   position: fixed;
@@ -592,15 +593,13 @@ template {
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: #c91900;
-  transition: transform 1s; }
+  background-color: #c91900; }
   .lateral-menu-container .menu {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    transition: left 1s;
     z-index: 10;
     background-image: url("../img/callofdata-vertical.png");
     background-repeat: no-repeat;
@@ -878,7 +877,7 @@ template {
   padding-left: 18px;
   padding-right: 18px;
   background-color: #010101;
-  background-image: url("../img/background_newsletter.jpg");
+  background-image: url("../img/backgrounds/background_newsletter_mobile.jpg");
   background-size: 100% 100%;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -894,7 +893,8 @@ template {
       padding-right: 375px; } }
   @media screen and (min-width: 768px) {
     .newsletter-container {
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      background-image: url("../img/backgrounds/background_newsletter.jpg"); } }
   @media screen and (min-width: 768px) {
     .newsletter-container {
       padding-top: 60px;
@@ -1111,7 +1111,7 @@ template {
 
 .landing {
   background-color: #010101;
-  background-image: url("../img/background.jpeg");
+  background-image: url("../img/backgrounds/background_mobile.jpeg");
   background-size: auto 120%;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -1123,7 +1123,8 @@ template {
   padding-bottom: 55px; }
   @media screen and (min-width: 768px) {
     .landing {
-      background-size: cover; } }
+      background-size: cover;
+      background-image: url("../img/backgrounds/background.jpeg"); } }
   .landing .logo {
     display: flex;
     align-content: center;

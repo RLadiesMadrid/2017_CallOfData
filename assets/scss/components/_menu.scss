@@ -2,10 +2,12 @@
   &.menu--on {
    // left:0 !important;
    transform: translateX(0%) !important;
+   
   }
 }
 
 .lateral-menu-container{
+  transition: transform 1s;
   transform: translateX(100%);
   opacity: 0.95;
   position: fixed;
@@ -15,7 +17,6 @@
   right: 0;
   z-index: 2;
   background-color: $red;
-  transition: transform 1s;
 
   .menu{
     position: fixed;
@@ -23,13 +24,11 @@
     left:0;
     right: 0;
     bottom: 0;
-    transition: left 1s;
     z-index: 10;
     background-image: url('../img/callofdata-vertical.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-position-y: 5rem;
-
     padding-left: 30px;
 
     header {

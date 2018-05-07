@@ -2,7 +2,7 @@ $(document).ready(function () {
   init();
 
   function init() {
-    $('.close-container').click(function () {
+    $('.js-close-container').click(function () {
       $('.lateral-menu-container, .lateral-menu-container .menu').removeClass('menu--on');
     });
 
