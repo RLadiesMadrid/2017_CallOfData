@@ -11,6 +11,7 @@ $(document).ready(function () {
       $('[data-lang="' + item + '"]').html(json[item]);
       $('[data-lang-placeholder="' + item + '"').attr('placeholder', json[item]);
     }
+    $('.app.oh').removeClass('oh');
   });
 });
 
