@@ -16,7 +16,7 @@
   "intro": "The most awesome Data Science event promoting gender diversity to be held in Spain. One day of technical talks about data, another to compete in a datathon for a huge prize for the winner. All of it, in the wonderful premises of",
   "june": "June",
   "jury-description-gema": "<b>Gema Parreño</b> works as Data Scientist at BBVA. She designed Deep Asteroid, the architecture for a net to detect to detect asteroids’ impact on the Earth. She has developed some of the use examples for the Tensorflow project, as well as software and tutorials for games based on DeepMind’s PySC2, such as StarCraft.",
-  "jury-description-ibon": "<b>Ibon Tolosana</b> works as Platform Engineer at Plato and also works remotely for foreign companies. He has been professionally developing software for more than 20 years and is Technical Cofounder of companies like Juegon.com, Novoplay or Ludei. He loves to create and enjoy computer-generated art, algorithmics, chocolate and compulsively developing side projects.",  
+  "jury-description-ibon": "<b>Ibon Tolosana</b> works as Platform Engineer at Plato and also works remotely for foreign companies. He has been professionally developing software for more than 20 years and is Technical Cofounder of companies like Juegon.com, Novoplay or Ludei. He loves to create and enjoy computer-generated art, algorithmics, chocolate and compulsively developing side projects.",
   "jury-description-irene": "<b>Irene Rodríguez</b> works as Senior Data Scientist at Openbank and Associate Researcher at the Computer Engineering Department of the Autonomous University of Madrid (UAM). Se has a PhD in Computer Engineering and a degree in Mathematics in the UAM. Her interests are pattern recognition and its practical applications in fields such as Bioinformatics, electronic noses, or the banking industry, among others.",
   "jury-description-jorge": "<b>Jorge Barroso</b> is Developer and Cofounder at Karumi, and Google Developer Expert in Android. He worked at Tuenti from 2009 to 2013 in the Android’s team. He has participated in several mobile projects of the company, like j2me, Blackberry and Android. Before Tuenti, he had worked at several companies developing games for mobile devices, and multiplayer games.",
   "newsletter-form-message": "We won't bother you much, we'll just send updates of the event",
@@ -38,11 +38,9 @@
   "text-dataton-3": "To enter the competition as a team, every member <b>must have a ticket to the event</b> and the team must fill the form with the members info. If you are short of members for your team,",
   "text-dataton-32": "or join us in our",
   "text-dataton-33": "and we will help you find team members",
-  "text-dataton-4": "The approximately hours of the event go from <b>9 in the morning</b> to <b>8 in the evening</b>.",
   "text-conferences-1": "Saturday, June 2nd, the first day of Call Of Data II, will consist on a series of <b>talks</b>. We will enjoy 10 interesting talks about <b>data, algorithms and the practical applications of data analysis</b>.",
   "text-conferences-2": "We will have <b>6 invited speakers</b>, experts in Data Science, who will <b>share their knowledge about data and inspire</b> the people who will participate in the next day competition.",
   "text-conferences-3": "There are also <b>4 slots reserved</b> for anyone who wants to give a <b>lightning talk</b>, that is, a short talk (20~25 minutes) about data. These talks will be selected anonymously through a Call for Papers. You can submit your proposal",
-  "text-conferences-4": "The approximate hours of the event go from <b>9 in the morning</b> to <b>8 in the evening</b>.",
   "tickets": "Tickets",
   "jury": "Jury"
 }
