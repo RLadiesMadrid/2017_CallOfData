@@ -739,7 +739,11 @@ template {
 .schedule-container ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 14px; }
+  @media screen and (min-width: 768px) {
+    .schedule-container ul {
+      font-size: 18px; } }
   .schedule-container ul li {
     padding: 1rem; }
     .schedule-container ul li:nth-child(odd) {
