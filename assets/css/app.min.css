@@ -822,9 +822,11 @@ template {
       .speakers-container .speakers-preview {
         padding-left: 375px;
         padding-right: 375px; } }
-    @media screen and (min-width: 768px) {
-      .speakers-container .speakers-preview img {
-        display: none; } }
+    .speakers-container .speakers-preview img {
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .speakers-container .speakers-preview img {
+          display: none; } }
     .speakers-container .speakers-preview h3 {
       font-family: RobotoSlab;
       font-size: 25px;
