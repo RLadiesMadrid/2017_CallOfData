@@ -6,13 +6,17 @@ const langSelected = getParameterByName('lang') || 'es'
 const lang = langs[langSelected] || langs.es;
 
 $(document).ready(function () {
-  const json = lang;
-  for (item in json) {
-    $('[data-lang="' + item + '"]').html(json[item]);
-    $('[data-lang-placeholder="' + item + '"]').attr('placeholder', json[item]);
+  try {
+    const json = lang;
+    for (item in json) {
+      $('[data-lang="' + item + '"]').html(json[item]);
+      $('[data-lang-placeholder="' + item + '"]').attr('placeholder', json[item]);
+    }
+  } catch (error) {
+    console.error(error);
+  } finally {
+    $('.oh').removeClass('oh');
   }
-  $('.oh').removeClass('oh');
-
 });
 
 function getParameterByName(name, url) {
