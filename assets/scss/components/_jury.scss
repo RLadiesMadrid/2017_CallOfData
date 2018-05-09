@@ -32,10 +32,12 @@
 }
 
 .jury-member {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
   &-header {
     display: flex;
     padding-bottom: 1rem;
-    margin-top: 45px;
 
     img {
       width: 138px;
