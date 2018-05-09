@@ -65,6 +65,6 @@ $(document).ready(function () {
     $('.speakers-preview img').attr({ src: speaker.img, alt: speaker.name });
     $('.speakers-preview h3').text(speaker.name);
     $('.speakers-preview .title-talk').text(speaker.talk);
-    $('.speakers-preview p').text(speaker.bio);
+    $('.speakers-preview p').html(speaker.bio);
   }
 });

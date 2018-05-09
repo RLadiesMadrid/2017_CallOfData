@@ -855,7 +855,9 @@ template {
         color: #ee4613; }
     .speakers-container .speakers-preview p {
       font-family: Roboto;
-      font-size: 16px;
+      font-size: 18px;
+      max-width: 750px;
+      margin: 0 auto;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
