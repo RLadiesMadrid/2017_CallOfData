@@ -29,7 +29,7 @@ var esES = {
   "opening-datathon": "Comienzo datatón",
   "project-exposition": "Comienzo exposiciones",
   "question-email": "¿A qué email te escribimos?",
-  "lunch-break": "Cómida",
+  "lunch-break": "Comida",
   "registration": "Registro",
   "schedule": "Agenda",
   "send": "ENVIAR",
