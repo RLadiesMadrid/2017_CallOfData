@@ -700,7 +700,7 @@ template {
   background: #eeeeee;
   font-size: 18px;
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-left: 18px;
   padding-right: 18px;
   font-weight: normal;
@@ -726,11 +726,11 @@ template {
 
 .schedule-container h3 {
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: 2rem 0;
   padding: 0 1rem 0;
   border-left: 5px solid #ff991d;
-  font-family: Roboto;
+  font-family: RobotoSlab;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.63;
@@ -758,9 +758,9 @@ template {
 .speakers-container {
   padding-bottom: 60px; }
   .speakers-container header {
+    background: #eeeeee;
     padding-left: 18px;
-    padding-right: 18px;
-    background: #eeeeee; }
+    padding-right: 18px; }
     @media screen and (min-width: 768px) {
       .speakers-container header {
         padding-left: 40px;
@@ -769,6 +769,13 @@ template {
       .speakers-container header {
         padding-left: 375px;
         padding-right: 375px; } }
+    @media screen and (min-width: 768px) {
+      .speakers-container header {
+        padding-top: 45px; } }
+    @media screen and (min-width: 1440px) {
+      .speakers-container header {
+        padding-left: 248px;
+        padding-right: 248px; } }
     .speakers-container header h2 {
       font-family: 'Roboto Slab';
       font-size: 24px;

@@ -2,8 +2,16 @@
   padding-bottom: 60px;
 
   header {
-    @include grid--padding-content;
     background: #eeeeee;
+    @include grid--padding-content;
+    @media screen and (min-width: $tablet-min-width) {
+      padding-top: 45px;
+    }
+
+    @media screen and (min-width: $desktop-min-width) {
+      padding-left: 248px;
+      padding-right: 248px;
+    }
 
     h2 {
       @include title-section;
