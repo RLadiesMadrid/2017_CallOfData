@@ -1,0 +1,104 @@
+.speakers-container {
+  padding-bottom: 60px;
+
+  header {
+    @include grid--padding-content;
+    background: #eeeeee;
+
+    h2 {
+      @include title-section;
+    }
+
+    .speakers-carrousel {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 1rem;
+      position: relative;
+      bottom: -5px;
+
+      img {
+        width: 100%;
+        display: block;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: opacity 1s;
+
+        &.speakers-carrousel--on {
+          opacity: 1;
+          border-bottom: 5px solid $tomato;
+          filter: initial;
+        }
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+          
+        }
+      }
+    }
+  }
+  
+  .speakers-preview {
+    @include grid--padding-content;
+    text-align: center;
+    padding-top: 20px;  
+
+    img  {
+      @media screen and (min-width: $tablet-min-width) {
+        display: none;
+      }
+    }
+
+    h3 {
+      font-family: RobotoSlab;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      color: $tomato;
+    }
+    
+    span {
+      display: none;
+      border: 1px solid $tomato;
+      max-width: 500px;
+      width: 80%;
+      padding: 5px;
+      margin: 0 auto;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.14;
+      letter-spacing: normal;
+      color: $charcoal;
+      
+      i {
+        display: inline-block;
+        margin-right: 5px;
+        color: $tomato;
+      }
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $charcoal;
+      margin-top: 1rem;
+
+      b, a {
+        font-weight: normal;
+        color: $tomato;
+      }
+    }
+  }
+}

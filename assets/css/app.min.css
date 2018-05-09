@@ -755,10 +755,115 @@ template {
         display: inline-block;
         padding: 0 2rem; }
 
+.speakers-container {
+  padding-bottom: 60px; }
+  .speakers-container header {
+    padding-left: 18px;
+    padding-right: 18px;
+    background: #eeeeee; }
+    @media screen and (min-width: 768px) {
+      .speakers-container header {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media screen and (min-width: 1440px) {
+      .speakers-container header {
+        padding-left: 375px;
+        padding-right: 375px; } }
+    .speakers-container header h2 {
+      font-family: 'Roboto Slab';
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.88;
+      letter-spacing: normal;
+      text-align: left;
+      color: #101713;
+      border-left: 5px solid #c91900;
+      padding: 0 15px;
+      margin: 0; }
+    .speakers-container header .speakers-carrousel {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 1rem;
+      position: relative;
+      bottom: -5px; }
+      .speakers-container header .speakers-carrousel img {
+        width: 100%;
+        display: block;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: opacity 1s; }
+        .speakers-container header .speakers-carrousel img.speakers-carrousel--on {
+          opacity: 1;
+          border-bottom: 5px solid #ee4613;
+          filter: initial; }
+        .speakers-container header .speakers-carrousel img:hover {
+          cursor: pointer;
+          opacity: 0.8; }
+  .speakers-container .speakers-preview {
+    padding-left: 18px;
+    padding-right: 18px;
+    text-align: center;
+    padding-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .speakers-container .speakers-preview {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media screen and (min-width: 1440px) {
+      .speakers-container .speakers-preview {
+        padding-left: 375px;
+        padding-right: 375px; } }
+    @media screen and (min-width: 768px) {
+      .speakers-container .speakers-preview img {
+        display: none; } }
+    .speakers-container .speakers-preview h3 {
+      font-family: RobotoSlab;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      color: #ee4613; }
+    .speakers-container .speakers-preview span {
+      display: none;
+      border: 1px solid #ee4613;
+      max-width: 500px;
+      width: 80%;
+      padding: 5px;
+      margin: 0 auto;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.14;
+      letter-spacing: normal;
+      color: #2c362c; }
+      .speakers-container .speakers-preview span i {
+        display: inline-block;
+        margin-right: 5px;
+        color: #ee4613; }
+    .speakers-container .speakers-preview p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #2c362c;
+      margin-top: 1rem; }
+      .speakers-container .speakers-preview p b, .speakers-container .speakers-preview p a {
+        font-weight: normal;
+        color: #ee4613; }
+
 .jury-container {
   padding-left: 18px;
   padding-right: 18px;
-  background-image: linear-gradient(to bottom, #ffffff, #dfdcdc);
+  background: #f2f2f2;
   padding-bottom: 60px;
   padding-top: 30px; }
   @media screen and (min-width: 768px) {

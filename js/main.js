@@ -20,9 +20,9 @@ $(document).ready(function () {
       $('.js-tab ' + $id).addClass('tab-content--on');
     });
 
-    $('[data-id=change-lang]').each(function(index){
+    $('[data-id=change-lang]').each(function (index) {
       const elem = $(this);
-      if(lang === 'en-GB'){
+      if (langSelected === 'en') {
         const text = elem.hasClass('js-change-lang') ? 'Spanish' : 'ES >';
         elem.attr('href', '/?lang=es');
         elem.text(text);
@@ -33,5 +33,38 @@ $(document).ready(function () {
       }
     })
 
+    initCarrouselSpeakers();
+  }
+
+  function initCarrouselSpeakers() {
+    var resources = lang;
+    var speakers = [
+      { name: 'Carmen Reina', img: 'assets/img/ponente/carmen.jpg', talk: resources['talk-carmen'], bio: resources['bio-carmen'] },
+      { name: 'Hannah Frick', img: 'assets/img/ponente/hannah.jpg', talk: resources['talk-hannah'], bio: resources['bio-hannah'] },
+      { name: 'Mariluz Congosto', img: 'assets/img/ponente/mariluz.jpg', talk: resources['talk-mariluz'], bio: resources['bio-mariluz'] },
+      { name: 'Miriam Pena', img: 'assets/img/ponente/miriam.jpg', talk: resources['talk-miriam'], bio: resources['bio-miriam'] }
+    ];
+    var speakerOn = Math.floor((Math.random() * speakers.length));
+    var html = speakers.reduce(function (acc, speaker, index) {
+      var className = (index === speakerOn) ? 'speakers-carrousel--on' : '';
+      acc += '<img src="' + speaker.img + '" alt="' + speaker.name + '" class="' + className +'" data-index="' + index + '">';
+      return acc;
+    }, '');
+    $('div.speakers-carrousel').html(html);
+    setSpeaker(speakers[speakerOn]);
+
+    $('div.speakers-carrousel img').click(function () {
+      $('div.speakers-carrousel img').removeClass('speakers-carrousel--on');
+      $(this).addClass('speakers-carrousel--on');
+      var speakerOn = $(this).data('index')
+      setSpeaker(speakers[speakerOn])
+    });
+  }
+
+  function setSpeaker(speaker) {
+    $('.speakers-preview img').attr({ src: speaker.img, alt: speaker.name });
+    $('.speakers-preview h3').text(speaker.name);
+    $('.speakers-preview .title-talk').text(speaker.talk);
+    $('.speakers-preview p').text(speaker.bio);
   }
 });

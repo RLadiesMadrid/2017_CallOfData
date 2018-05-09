@@ -1,4 +1,8 @@
-{
+var enGB = {
+  "bio-carmen": "Carmen Reina is Manager Data Scientist at Orange & Data Science Program Director en ICEMD (ESIC). She received a Mathematical Sciences degree at the University Complutense of Madrid, with a major in Statistics and Operations research. She is an expert in Artificial Intelligence and has held positions at Everis, Synergic Partners, and Atos, getting involved in projects in the banking, financial, health, and energy sectors developing Machine Learning tools.",
+  "bio-hannah": "Hannah Frick is a statistician turned data scientist at Mango Solutions, co-author and maintainer of the trackeR and psychomix R packages and a member of the R-Ladies global leadership team.",
+  "bio-mariluz": "Mariluz Congosto is a social networks researcher, focused mainly on Twitter. She holds a PhD in Telematics from the UC3M and a degree on Computer Science from the UPM. She uses network analysis and visualization to unveil behavioral patterns, message dissemination and user characterization.",
+  "bio-miriam": "Miriam Pena works as Staff Engineer at AdRoll, where she designs critical parts of the intrastructure serving ads online. He studied Computer Science at the Universidad de La Coruña and has a 10-years experience developing scalable, high-performance systems in Erlang. She has been selected as a woman to follow in 2018 by Women 2.0.",
   "blog": "Blog",
   "c4p": "C4P",
   "call-for-papers": "Call for Papers",
@@ -30,8 +34,13 @@
   "schedule": "Schedule",
   "send": "SEND",
   "slack-group": "Slack channel",
+  "speakers": "Speakers",
   "sponsor": "Sponsorship",
   "talks": "Talks",
+  "talk-carmen": "",
+  "talk-hannah": "",
+  "talk-mariluz": "",
+  "talk-miriam": "",
   "team": "Team",
   "text-dataton-1": "The datathon will take place on Sunday, June 3rd, the second day of <b>Call Of Data II</b>. The dataset will be revealed first thing in the morning and the teams will have <b>8 hours to prepare an interesting project</b> using this data. At the end of the day, teams will have the opportunity to present their project to <b>the jury</b> in an elevator pitch format, which gives the speaker 5 minutes to make her/his case.",
   "text-dataton-2": "The main goal of the event is to promote diversity in STEM fields, so teams will have <b>4 members maximum</b>, at least <b>50% of them female</b>.",

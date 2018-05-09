@@ -151,3 +151,18 @@
   text-align: center;
   color: #ffffff;
 }
+
+@mixin title-section {
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: $almost-black;
+  border-left: 5px solid $red;
+  padding: 0 15px;
+  margin: 0;
+}
