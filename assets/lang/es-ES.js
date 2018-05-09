@@ -1,4 +1,8 @@
-{
+var esES = {
+  "bio-carmen": "Carmen Reina es manager data scientist en Orange y la directora del programa de Data Science del ICEMD (ESIC). Se licenció en Matemáticas por la Universidad Complutense de Madrid (UCM), especializándose en Investigación en Estadística y Operaciones. Es experta en Inteligencia Artificial y ha trabajado en Everis, Synergic Partners o Atos, involucrándose en proyectos de banca, finanzas, salud o energía, desarrollando herramientas de Machine Learning.",
+  "bio-hannah": "Hannah Frick es estadística convertida a data scientist en Mango Solutions, coautora y mantenedora de los paquetes de R trackerR y psychomix, y parte del equipo organizador de R-Ladies global.",
+  "bio-mariluz": "Mariluz Congosto es investigadora de datos sociales, preferentemente de Twitter. Es doctora en Telemática por la UC3M y licenciada en Informática por la UPM. Utiliza análisis de redes y visualización para descubrir patrones de comportamiento, propagación de mensajes y caracterización de usuarios.",
+  "bio-miriam": "Miriam Pena trabaja como staff engineer en AdRoll, donde diseña partes críticas de la infraestructura que sirve anuncios por internet. Estudió Ingeniería Informática en la Universidad de La Coruña y tiene 10 años de experiencia desarrollando sistemas escalables de alta concurrencia escritos en Erlang. Ha sido votada como una de las mujeres que seguir en 2018 por Women 2.0.",
   "blog": "Blog",
   "c4p": "C4P",
   "call-for-papers": "Call for Papers",
@@ -30,7 +34,12 @@
   "schedule": "Agenda",
   "send": "ENVIAR",
   "slack-group": "grupo de Slack",
+  "speakers": "Ponentes",
   "sponsor": "Patrocinio",
+  "talk-carmen": "Nombre de la charla",
+  "talk-hannah": "Nombre de la charla",
+  "talk-mariluz": "Nombre de la charla",
+  "talk-miriam": "Nombre de la charla",
   "talks": "Ponencias",
   "team": "Equipo",
   "text-dataton-1": "El datatón tendrá lugar durante el segundo día del <b>Call Of Data</b>, el domingo 3 de junio. Los conjuntos de datos se presentarán a primera hora y los equipos tendrán <b>8 horas para trabajar</b> sobre ellos e idear una aplicación interesante. Al final de la jornada tendrán 5 minutos para presentar su proyecto en formato elevator pitch frente a un <b>jurado de expertos</b> que decidirá qué equipo es el ganador.",

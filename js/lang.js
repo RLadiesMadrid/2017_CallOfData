@@ -1,18 +1,18 @@
 const langs = {
-  es: 'es-ES',
-  en: 'en-GB'
+  es: esES,
+  en: enGB
 };
-
-const lang = langs[getParameterByName('lang')] || 'es-ES';
+const langSelected = getParameterByName('lang') || 'es'
+const lang = langs[langSelected] || langs.es;
 
 $(document).ready(function () {
-  $.getJSON('assets/lang/' + lang + '.json', function (json) {
-    for (item in json) {
-      $('[data-lang="' + item + '"]').html(json[item]);
-      $('[data-lang-placeholder="' + item + '"').attr('placeholder', json[item]);
-    }
-    $('.oh').removeClass('oh');
-  });
+  const json = lang;
+  for (item in json) {
+    $('[data-lang="' + item + '"]').html(json[item]);
+    $('[data-lang-placeholder="' + item + '"').attr('placeholder', json[item]);
+  }
+  $('.oh').removeClass('oh');
+
 });
 
 function getParameterByName(name, url) {
