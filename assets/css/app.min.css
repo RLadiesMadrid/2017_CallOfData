@@ -914,50 +914,50 @@ template {
     .jury-members {
       grid-template-columns: repeat(4, 1fr); } }
 
-.jury-member-header {
-  display: flex;
-  padding-bottom: 1rem;
-  margin-top: 45px; }
-  .jury-member-header img {
-    width: 138px;
-    height: 138px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
-  .jury-member-header ul {
-    list-style: none;
+.jury-member {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .jury-member-header {
+    display: flex;
+    padding-bottom: 1rem; }
+    .jury-member-header img {
+      width: 138px;
+      height: 138px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .jury-member-header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 15px; }
+      .jury-member-header ul li {
+        margin-bottom: 0.5rem; }
+      .jury-member-header ul a {
+        color: #c91900; }
+  .jury-member-body h3 {
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #101713;
+    margin: 0; }
+  .jury-member-body p {
     margin: 0;
-    padding: 0;
-    padding-left: 15px; }
-    .jury-member-header ul li {
-      margin-bottom: 0.5rem; }
-    .jury-member-header ul a {
-      color: #c91900; }
-
-.jury-member-body h3 {
-  font-family: 'Roboto Slab';
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: left;
-  color: #101713;
-  margin: 0; }
-
-.jury-member-body p {
-  margin: 0;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.63;
-  letter-spacing: normal;
-  text-align: left;
-  color: #2c362c; }
-  .jury-member-body p b {
-    font-weight: bold; }
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c362c; }
+    .jury-member-body p b {
+      font-weight: bold; }
 
 .localitation-map {
   display: block;
