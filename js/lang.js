@@ -9,7 +9,7 @@ $(document).ready(function () {
   const json = lang;
   for (item in json) {
     $('[data-lang="' + item + '"]').html(json[item]);
-    $('[data-lang-placeholder="' + item + '"').attr('placeholder', json[item]);
+    $('[data-lang-placeholder="' + item + '"]').attr('placeholder', json[item]);
   }
   $('.oh').removeClass('oh');
 
