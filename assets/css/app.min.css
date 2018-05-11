@@ -870,6 +870,23 @@ template {
       .speakers-container .speakers-preview p b, .speakers-container .speakers-preview p a {
         font-weight: normal;
         color: #ee4613; }
+    .speakers-container .speakers-preview ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0; }
+      .speakers-container .speakers-preview ul li {
+        font-size: 15px; }
+        .speakers-container .speakers-preview ul li::before {
+          content: '·';
+          color: #101713;
+          margin: 0 0.5rem; }
+        .speakers-container .speakers-preview ul li:first-child::before {
+          content: '';
+          margin: 0; }
+        .speakers-container .speakers-preview ul li a {
+          color: #ee4613;
+          text-decoration: none; }
 
 .jury-container {
   padding-left: 18px;

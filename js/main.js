@@ -39,10 +39,45 @@ $(document).ready(function () {
   function initCarrouselSpeakers() {
     var resources = lang;
     var speakers = [
-      { name: 'Carmen Reina', img: 'assets/img/ponente/carmen.jpg', talk: resources['talk-carmen'], bio: resources['bio-carmen'] },
-      { name: 'Hannah Frick', img: 'assets/img/ponente/hannah.jpg', talk: resources['talk-hannah'], bio: resources['bio-hannah'] },
-      { name: 'Mariluz Congosto', img: 'assets/img/ponente/mariluz.jpg', talk: resources['talk-mariluz'], bio: resources['bio-mariluz'] },
-      { name: 'Miriam Pena', img: 'assets/img/ponente/miriam.jpg', talk: resources['talk-miriam'], bio: resources['bio-miriam'] }
+      { 
+        name: 'Carmen Reina', 
+        img: 'assets/img/ponente/carmen.jpg', 
+        talk: resources['talk-carmen'], 
+        bio: resources['bio-carmen'],
+        socials: [
+          { type: 'twitter', url: 'https://twitter.com/reigarma' },
+          { type: 'linkedin-in', url: 'https://www.linkedin.com/in/carmenreina/' }
+        ]
+      },
+      { 
+        name: 'Hannah Frick', 
+        img: 'assets/img/ponente/hannah.jpg', 
+        talk: resources['talk-hannah'], 
+        bio: resources['bio-hannah'],
+        socials: [
+          { type: 'twitter', url: 'https://twitter.com/hfcfrick' }
+        ] 
+      },
+      { 
+        name: 'Mariluz Congosto', 
+        img: 'assets/img/ponente/mariluz.jpg', 
+        talk: resources['talk-mariluz'], 
+        bio: resources['bio-mariluz'],
+        socials: [
+          { type: 'twitter', url: 'http://twitter.com/congosto' },
+          { type: 'linkedin-in', url: 'http://www.linkedin.com/in/congosto' }
+        ] 
+      },
+      { 
+        name: 'Miriam Pena', 
+        img: 'assets/img/ponente/miriam.jpg', 
+        talk: resources['talk-miriam'], 
+        bio: resources['bio-miriam'],
+        socials: [
+          { type: 'twitter', url: 'https://twitter.com/miriampena' },
+          { type: 'linkedin-in', url: 'https://www.linkedin.com/in/miriampena/' }
+        ] 
+      }
     ];
     var speakerOn = Math.floor((Math.random() * speakers.length));
     var html = speakers.reduce(function (acc, speaker, index) {
@@ -66,5 +101,11 @@ $(document).ready(function () {
     $('.speakers-preview h3').text(speaker.name);
     $('.speakers-preview .title-talk').text(speaker.talk);
     $('.speakers-preview p').html(speaker.bio);
+
+    const htmlSocial = speaker.socials.reduce(function (acc, social, index) {
+      acc += '<li><a href="' + social.url + '" target="_blank"><i class="fab fa-' + social.type + '"></i></a></li>';
+      return acc;
+    }, '');
+    $('.speakers-preview ul').html(htmlSocial);
   }
 });

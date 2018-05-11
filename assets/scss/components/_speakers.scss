@@ -112,5 +112,32 @@
         color: $tomato;
       }
     }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+
+      li {
+        font-size: 15px;
+        
+        &::before {
+          content: '·';
+          color: $almost-black;
+          margin: 0 0.5rem;
+        }
+
+        &:first-child::before {
+          content: '';
+          margin: 0;
+        }
+
+        a {
+          color: $tomato;
+        text-decoration: none;
+        }
+      }
+    }
   }
 }
