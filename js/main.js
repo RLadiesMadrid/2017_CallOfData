@@ -82,7 +82,7 @@ $(document).ready(function () {
         name: 'Celeste Durán', 
         img: 'assets/img/ponente/celeste.jpeg', 
         talk: resources['talk-celeste'], 
-        bio: resources['bio-celest'],
+        bio: resources['bio-celeste'],
         socials: [
           { type: 'twitter', url: 'https://twitter.com/mceduran' },
           { type: 'linkedin-in', url: 'https://www.linkedin.com/in/maria-celeste-duran-gonzalez-477b46113/' }
