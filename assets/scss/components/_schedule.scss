@@ -37,7 +37,19 @@
       h4 {
         margin: 0;
         padding: 0;
-        font-size: 20px;
+        font-size: 16px;
+
+        @media screen and (min-width: $tablet-min-width) {
+          font-size: 22px;
+        }
+      }
+
+      span, b {
+        font-size: 14px;
+
+        @media screen and (min-width: $tablet-min-width) {
+          font-size: 18px;
+        }
       }
     }
   }

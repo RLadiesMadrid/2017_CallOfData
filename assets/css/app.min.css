@@ -755,7 +755,15 @@ template {
     .schedule-container ul li h4 {
       margin: 0;
       padding: 0;
-      font-size: 20px; }
+      font-size: 16px; }
+      @media screen and (min-width: 768px) {
+        .schedule-container ul li h4 {
+          font-size: 22px; } }
+    .schedule-container ul li span, .schedule-container ul li b {
+      font-size: 14px; }
+      @media screen and (min-width: 768px) {
+        .schedule-container ul li span, .schedule-container ul li b {
+          font-size: 18px; } }
 
 .speakers-container {
   padding-bottom: 60px; }
