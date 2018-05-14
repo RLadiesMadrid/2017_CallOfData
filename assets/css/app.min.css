@@ -792,7 +792,7 @@ template {
     .speakers-container header .speakers-carrousel {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       margin-top: 1rem;
       position: relative;
       bottom: -5px; }
@@ -874,6 +874,7 @@ template {
       list-style: none;
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 0; }
       .speakers-container .speakers-preview ul li {
         font-size: 15px; }
