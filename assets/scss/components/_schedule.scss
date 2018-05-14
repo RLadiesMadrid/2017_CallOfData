@@ -27,7 +27,7 @@
       }
 
       img  {
-        box-shadow: 0 0 0 2px #b4b4b5, 0 0 5px rgba(33,34,35,.3);
+        box-shadow: 0 0 0 2px rgba(#b4b4b5, .5), 0 0 5px rgba(33,34,35,.3);
         border-radius: 50%;
         width: 2.5rem;
         height: 2.5rem;
@@ -36,6 +36,9 @@
         @media screen and (min-width: $tablet-min-width) {
           width: 5rem;
           height: 5rem;
+        }
+        &.tba {
+          box-shadow: none;
         }
       }
 

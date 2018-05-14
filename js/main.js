@@ -162,7 +162,7 @@ $(document).ready(function () {
 
   function getScheduleItem(acc, sche, index) {
     acc += `<li>
-      <img src="${sche.img}" alt="${sche.speaker}">
+      <img class="${(sche.img=='assets/img/tba.svg') ? 'tba':''}" src="${sche.img}" alt="${sche.speaker}">
       <div>
         <b>${sche.time}h</b>
         <h4>${sche.talk}</h4>
