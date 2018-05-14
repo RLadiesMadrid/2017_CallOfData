@@ -739,21 +739,23 @@ template {
 .schedule-container ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  font-size: 14px; }
-  @media screen and (min-width: 768px) {
-    .schedule-container ul {
-      font-size: 18px; } }
+  margin: 0; }
   .schedule-container ul li {
+    display: flex;
+    align-items: center;
     padding: 1rem; }
     .schedule-container ul li:nth-child(odd) {
       background: #ffffff; }
-    .schedule-container ul li b {
-      display: inline-block; }
-      .schedule-container ul li b::after {
-        content: '—';
-        display: inline-block;
-        padding: 0 2rem; }
+    .schedule-container ul li img {
+      box-shadow: 0 0 0 2px #b4b4b5, 0 0 5px rgba(33, 34, 35, 0.3);
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      margin-right: 2rem; }
+    .schedule-container ul li h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 20px; }
 
 .speakers-container {
   padding-bottom: 60px; }
@@ -792,7 +794,7 @@ template {
     .speakers-container header .speakers-carrousel {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       margin-top: 1rem;
       position: relative;
       bottom: -5px; }
