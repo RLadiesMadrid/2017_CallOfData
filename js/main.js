@@ -95,7 +95,8 @@ $(document).ready(function () {
         talk: resources['talk-nerea'],
         bio: resources['bio-nerea'],
         socials: [
-          { type: 'twitter', url: 'https://twitter.com/sailormerqury' }
+          { type: 'twitter', url: 'https://twitter.com/sailormerqury' },
+          { type: 'linkedin-in', url: 'https://www.linkedin.com/in/nerealuis/' }
         ]
       }
     ];
