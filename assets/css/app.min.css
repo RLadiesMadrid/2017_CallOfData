@@ -932,7 +932,7 @@ template {
       grid-template-columns: repeat(2, 1fr); } }
   @media screen and (min-width: 1440px) {
     .jury-members {
-      grid-template-columns: repeat(4, 1fr); } }
+      grid-template-columns: repeat(5, 1fr); } }
 
 .jury-member {
   margin-top: 25px;
