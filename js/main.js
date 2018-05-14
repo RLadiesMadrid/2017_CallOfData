@@ -95,8 +95,7 @@ $(document).ready(function () {
         talk: resources['talk-nerea'],
         bio: resources['bio-nerea'],
         socials: [
-          { type: 'twitter', url: 'https://twitter.com/sailormerqury' },
-          { type: 'linkedin-in', url: 'https://www.linkedin.com/in/maria-celeste-duran-gonzalez-477b46113/' }
+          { type: 'twitter', url: 'https://twitter.com/sailormerqury' }
         ]
       }
     ];
