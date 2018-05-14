@@ -42,7 +42,8 @@ $(document).ready(function () {
       { name: 'Carmen Reina', img: 'assets/img/ponente/carmen.jpg', talk: resources['talk-carmen'], bio: resources['bio-carmen'] },
       { name: 'Hannah Frick', img: 'assets/img/ponente/hannah.jpg', talk: resources['talk-hannah'], bio: resources['bio-hannah'] },
       { name: 'Mariluz Congosto', img: 'assets/img/ponente/mariluz.jpg', talk: resources['talk-mariluz'], bio: resources['bio-mariluz'] },
-      { name: 'Miriam Pena', img: 'assets/img/ponente/miriam.jpg', talk: resources['talk-miriam'], bio: resources['bio-miriam'] }
+      { name: 'Miriam Pena', img: 'assets/img/ponente/miriam.jpg', talk: resources['talk-miriam'], bio: resources['bio-miriam'] },
+      { name: 'Celeste Durán', img: 'assets/img/ponente/celeste.jpeg', talk: resources['talk-celeste'], bio: resources['bio-celeste'] }
     ];
     var speakerOn = Math.floor((Math.random() * speakers.length));
     var html = speakers.reduce(function (acc, speaker, index) {
