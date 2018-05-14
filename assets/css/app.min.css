@@ -874,6 +874,7 @@ template {
       list-style: none;
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 0; }
       .speakers-container .speakers-preview ul li {
         font-size: 15px; }
