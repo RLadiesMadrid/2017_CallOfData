@@ -90,7 +90,7 @@ $(document).ready(function () {
         ]
       },
       {
-        name: 'Nerea Luis Minguella',
+        name: 'Nerea Luis Mingueza',
         img: 'assets/img/ponente/nerea.jpeg',
         talk: resources['talk-nerea'],
         bio: resources['bio-nerea'],
