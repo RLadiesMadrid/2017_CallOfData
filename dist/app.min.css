@@ -743,7 +743,7 @@ template {
   .schedule-container ul li {
     display: flex;
     align-items: center;
-    padding: 1rem; }
+    padding: 0.7rem 1rem; }
     .schedule-container ul li:nth-child(odd) {
       background: #ffffff; }
     .schedule-container ul li img {
@@ -751,11 +751,11 @@ template {
       border-radius: 50%;
       width: 2.5rem;
       height: 2.5rem;
-      margin-right: 2rem; }
+      margin-right: 1rem; }
       @media screen and (min-width: 768px) {
         .schedule-container ul li img {
-          width: 5rem;
-          height: 5rem; } }
+          width: 4.5rem;
+          height: 4.5rem; } }
       .schedule-container ul li img.tba {
         box-shadow: none; }
     .schedule-container ul li h4 {
