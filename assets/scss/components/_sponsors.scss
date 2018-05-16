@@ -28,12 +28,27 @@
     width: 100%;
     text-align: center;
     
-    img {
+    a {
       border: solid 1px #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px;
       width: 150px;
-      padding: 0.5rem;
+      height: 75px;
     }
-    &--gold img { padding: 2rem 1rem; }
+    &--gold a { 
+      width: 210px;
+      height: 120px;
+
+      img {
+        width: 85px;
+      }
+    }
+
+    img {
+      width: 80%;
+    }
 
     h3 {
       display: inline-block;
@@ -61,12 +76,7 @@
       }
     }
 
-    &-container {
-      a {
-        display: block;
-        margin: 15px;
-      }
-  
+    &-container {  
       @media screen and (min-width: $tablet-min-width) {
         display: flex; 
         align-items: center;

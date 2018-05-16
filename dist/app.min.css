@@ -1037,12 +1037,21 @@ template {
   .sponsors-module .sponsors-type {
     width: 100%;
     text-align: center; }
-    .sponsors-module .sponsors-type img {
+    .sponsors-module .sponsors-type a {
       border: solid 1px #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px;
       width: 150px;
-      padding: 0.5rem; }
-    .sponsors-module .sponsors-type--gold img {
-      padding: 2rem 1rem; }
+      height: 75px; }
+    .sponsors-module .sponsors-type--gold a {
+      width: 210px;
+      height: 120px; }
+      .sponsors-module .sponsors-type--gold a img {
+        width: 85px; }
+    .sponsors-module .sponsors-type img {
+      width: 80%; }
     .sponsors-module .sponsors-type h3 {
       display: inline-block;
       font-family: Roboto;
@@ -1069,9 +1078,6 @@ template {
       .sponsors-module .sponsors-type--media, .sponsors-module .sponsors-type--collaborators {
         width: auto;
         display: inline-block; } }
-    .sponsors-module .sponsors-type-container a {
-      display: block;
-      margin: 15px; }
     @media screen and (min-width: 768px) {
       .sponsors-module .sponsors-type-container {
         display: flex;
