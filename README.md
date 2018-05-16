@@ -16,6 +16,17 @@
 
 ```npm run build```
 
+## Gestión de datos
+
+Los datos de cada módulo se suelen cargar dinámicamente. Si necesitas cambiar algun datos de algun módulo, 
+los pasa son:
+
+1. Los datos se encuentran en `./src/models`
+2. Cambia el datos que desees
+3. Ejecuta en un terminal en la raíz del proyecto `npm run build`
+4. Si falla intenta a installar las dependencias `npm install`
+5. Sube los ficheros que se te generen de la carpeta `./dist`
+
 ## Gestión de idioma
 
 Debido a que la landing se encuentra en dos idiomas (castellano e inglés), 

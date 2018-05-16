@@ -1,0 +1,86 @@
+.sponsors-module {
+  @include grid--padding-content;
+  @media screen and (min-width: $tablet-min-width) {
+    padding-top: 45px;
+  }
+
+  @media screen and (min-width: $desktop-min-width) {
+    padding-left: 248px;
+    padding-right: 248px;
+  }
+
+  background: $white;
+  padding-top: 45px;
+  padding-bottom: 60px;
+
+  h2 {
+    @include title-section;
+    border-left-color: $mango;
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sponsors-type {
+    width: 100%;
+    text-align: center;
+    
+    a {
+      border: solid 1px #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px;
+      width: 150px;
+      height: 75px;
+    }
+    &--gold a { 
+      width: 210px;
+      height: 120px;
+
+      img {
+        width: 85px;
+      }
+    }
+
+    img {
+      width: 80%;
+    }
+
+    h3 {
+      display: inline-block;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.88;
+      letter-spacing: normal; 
+      color: $almost-black;
+      border-bottom: 3px solid $almost-black;
+      margin-bottom: 0;
+    }
+    &--gold h3 { border-bottom-color: $mango; }
+    &--silver h3 { border-bottom-color: #9b9b9b; } 
+    &--bronze h3 { border-bottom-color: #9f6a46; }
+    &--media h3 { border-bottom-color: #4a90e2; }
+    &--collaborators h3 { border-bottom-color: $tomato; }
+
+    @media screen and (min-width: $tablet-min-width) {
+      &--media, &--collaborators {
+        width: auto;
+        display: inline-block;
+      }
+    }
+
+    &-container {  
+        display: flex; 
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  } 
+}
