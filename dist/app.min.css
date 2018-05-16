@@ -1053,7 +1053,8 @@ template {
       line-height: 1.88;
       letter-spacing: normal;
       color: #101713;
-      border-bottom: 3px solid #101713; }
+      border-bottom: 3px solid #101713;
+      margin-bottom: 0; }
     .sponsors-module .sponsors-type--gold h3 {
       border-bottom-color: #ff991d; }
     .sponsors-module .sponsors-type--silver h3 {

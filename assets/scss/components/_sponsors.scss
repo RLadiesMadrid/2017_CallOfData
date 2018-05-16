@@ -46,6 +46,7 @@
       letter-spacing: normal; 
       color: $almost-black;
       border-bottom: 3px solid $almost-black;
+      margin-bottom: 0;
     }
     &--gold h3 { border-bottom-color: $mango; }
     &--silver h3 { border-bottom-color: #9b9b9b; } 
