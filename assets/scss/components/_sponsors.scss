@@ -77,12 +77,10 @@
     }
 
     &-container {  
-      @media screen and (min-width: $tablet-min-width) {
         display: flex; 
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-      }
     }
   } 
 }

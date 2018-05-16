@@ -29,7 +29,7 @@ export default [
       //  { name: 'T3chfest', img: '', url: 'https://t3chfest.uc3m.es/2019/' }
     ]
   },
- /* {
+/*  {
     type: 'media',
     title: resources['media'],
     enterprises: [

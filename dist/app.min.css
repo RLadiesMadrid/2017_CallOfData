@@ -1078,12 +1078,11 @@ template {
       .sponsors-module .sponsors-type--media, .sponsors-module .sponsors-type--collaborators {
         width: auto;
         display: inline-block; } }
-    @media screen and (min-width: 768px) {
-      .sponsors-module .sponsors-type-container {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center; } }
+    .sponsors-module .sponsors-type-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center; }
 
 .localitation-map {
   display: block;
