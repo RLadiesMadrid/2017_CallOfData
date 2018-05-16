@@ -8,7 +8,7 @@
     padding-left: 248px;
     padding-right: 248px;
   }
-  
+
   background: $white;
   padding-top: 45px;
   padding-bottom: 60px;
@@ -31,10 +31,9 @@
     img {
       border: solid 1px #eeeeee;
       width: 150px;
-      height: 75px;
       padding: 0.5rem;
     }
-    &--gold img { padding: 2rem; }
+    &--gold img { padding: 1rem 2rem; }
 
     h3 {
       display: inline-block;

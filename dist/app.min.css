@@ -1040,10 +1040,9 @@ template {
     .sponsors-module .sponsors-type img {
       border: solid 1px #eeeeee;
       width: 150px;
-      height: 75px;
       padding: 0.5rem; }
     .sponsors-module .sponsors-type--gold img {
-      padding: 2rem; }
+      padding: 1rem 2rem; }
     .sponsors-module .sponsors-type h3 {
       display: inline-block;
       font-family: Roboto;
