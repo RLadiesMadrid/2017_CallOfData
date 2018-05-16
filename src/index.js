@@ -4,6 +4,7 @@ import menu from './menu';
 import tabs from './tabs';
 import schedule from './schedule';
 import speakers from './speakers';
+import sponsors from './sponsors';
 
 $(document).ready(function () {
   lang.init();
@@ -11,4 +12,5 @@ $(document).ready(function () {
   tabs.init();
   schedule.init();
   speakers.init();
+  sponsors.init();
 });

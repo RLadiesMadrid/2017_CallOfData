@@ -995,6 +995,83 @@ template {
     .jury-member-body p b {
       font-weight: bold; }
 
+.sponsors-module {
+  padding-left: 18px;
+  padding-right: 18px;
+  background: #ffffff;
+  padding-top: 45px;
+  padding-bottom: 60px; }
+  @media screen and (min-width: 768px) {
+    .sponsors-module {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media screen and (min-width: 1440px) {
+    .sponsors-module {
+      padding-left: 375px;
+      padding-right: 375px; } }
+  .sponsors-module h2 {
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #101713;
+    border-left: 5px solid #c91900;
+    padding: 0 15px;
+    margin: 0;
+    border-left-color: #ff991d; }
+  .sponsors-module-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .sponsors-module .sponsors-type {
+    width: 100%;
+    text-align: center; }
+    .sponsors-module .sponsors-type img {
+      border: solid 1px #eeeeee;
+      width: 150px;
+      height: 75px;
+      padding: 0.5rem; }
+    .sponsors-module .sponsors-type--gold img {
+      padding: 2rem; }
+    .sponsors-module .sponsors-type h3 {
+      display: inline-block;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.88;
+      letter-spacing: normal;
+      color: #101713;
+      border-bottom: 3px solid #101713; }
+    .sponsors-module .sponsors-type--gold h3 {
+      border-bottom-color: #ff991d; }
+    .sponsors-module .sponsors-type--silver h3 {
+      border-bottom-color: #9b9b9b; }
+    .sponsors-module .sponsors-type--bronze h3 {
+      border-bottom-color: #9f6a46; }
+    .sponsors-module .sponsors-type--media h3 {
+      border-bottom-color: #4a90e2; }
+    .sponsors-module .sponsors-type--collaborators h3 {
+      border-bottom-color: #ee4613; }
+    @media screen and (min-width: 768px) {
+      .sponsors-module .sponsors-type--media, .sponsors-module .sponsors-type--collaborators {
+        width: auto;
+        display: inline-block; } }
+    .sponsors-module .sponsors-type-container a {
+      display: block;
+      margin: 15px; }
+    @media screen and (min-width: 768px) {
+      .sponsors-module .sponsors-type-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center; } }
+
 .localitation-map {
   display: block;
   width: 100%;
