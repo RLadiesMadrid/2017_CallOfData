@@ -35,12 +35,12 @@ export default [
     enterprises: [
       { name: 'Autentia', img: '', url: 'https://www.autentia.com/' }
     ]
-  },
+  },*/
   {
     type: 'collaborators',
     title: resources['collaborators-sponsor'],
     enterprises: [
-      { name: 'Acción contra el hambre', img: '', url: 'https://www.accioncontraelhambre.org/es' }
+      { name: 'Acción contra el hambre', img: 'assets/img/sponsor/accion.png', url: 'https://www.accioncontraelhambre.org/es' }
     ]
-  }*/
+  }
 ]
