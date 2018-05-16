@@ -1,5 +1,14 @@
 .sponsors-module {
   @include grid--padding-content;
+  @media screen and (min-width: $tablet-min-width) {
+    padding-top: 45px;
+  }
+
+  @media screen and (min-width: $desktop-min-width) {
+    padding-left: 248px;
+    padding-right: 248px;
+  }
+  
   background: $white;
   padding-top: 45px;
   padding-bottom: 60px;

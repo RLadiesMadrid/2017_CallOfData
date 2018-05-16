@@ -1009,6 +1009,13 @@ template {
     .sponsors-module {
       padding-left: 375px;
       padding-right: 375px; } }
+  @media screen and (min-width: 768px) {
+    .sponsors-module {
+      padding-top: 45px; } }
+  @media screen and (min-width: 1440px) {
+    .sponsors-module {
+      padding-left: 248px;
+      padding-right: 248px; } }
   .sponsors-module h2 {
     font-family: 'Roboto Slab';
     font-size: 24px;
