@@ -44,6 +44,7 @@ export default {
   "slack-group": "Slack channel",
   "speakers": "Speakers",
   "sponsor": "Sponsorship",
+  "sponsors": "Sponsors",
   "talks": "Talks",
   "talk-carmen": "",
   "talk-hannah": "",

@@ -59,7 +59,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('js:watch', function () {
-	gulp.watch('./src/**/*.js', ['js']);
+	gulp.watch(['./assets/lang/**/*.js', './src/**/*.js'], ['js']);
 });
 
 gulp.task('build', ['sass', 'js']);

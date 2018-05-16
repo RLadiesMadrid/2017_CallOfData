@@ -44,6 +44,7 @@ export default {
   "speakers": "Ponentes",
   "silver": "Plata",
   "sponsor": "Patrocinio",
+  "sponsors": "Patrocinadores",
   "talk-carmen": "Nombre de la charla",
   "talk-celeste": "Nombre de la charla",
   "talk-hannah": "Nombre de la charla",
