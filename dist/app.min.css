@@ -1049,7 +1049,7 @@ template {
       width: 210px;
       height: 120px; }
       .sponsors-module .sponsors-type--gold a img {
-        width: 85px; }
+        width: 60%; }
     .sponsors-module .sponsors-type img {
       width: 80%; }
     .sponsors-module .sponsors-type h3 {
