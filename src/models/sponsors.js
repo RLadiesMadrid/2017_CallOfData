@@ -8,7 +8,7 @@ export default [
     title: resources['gold'],
     enterprises: [
       { name: 'iexl', img: 'assets/img/sponsor/ie.svg', url: 'https://www.ie.edu/' },
-     // { name: 'Altran', img: '', url: 'https://www.altran.com/es/es/' }
+      { name: 'Altran', img: 'assets/img/sponsor/altran.svg', url: 'https://www.altran.com/es/es/' }
     ]
   },
   {
