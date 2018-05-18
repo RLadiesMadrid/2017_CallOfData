@@ -17,7 +17,7 @@ export default {
     { time: '16:20', speaker: '', talk: 'Lightning talk 3', img: 'assets/img/tba.svg' },
     { time: '16:50', speaker: '', talk: 'Lightning talk 4', img: 'assets/img/tba.svg' },
     { time: '17:20', speaker: 'Carmen Reina', talk: '', img: 'assets/img/ponente/carmen.jpg' },
-    { time: '18:10', speaker: 'Mirian Pena', talk: 'Secret Life of Ads', img: 'assets/img/ponente/miriam.jpg' },
+    { time: '18:10', speaker: 'Miriam Pena', talk: 'Secret Life of Ads', img: 'assets/img/ponente/miriam.jpg' },
     { time: '19:00', speaker: '', talk: resources['closing'], img: 'assets/img/tba.svg' }
   ],
 
