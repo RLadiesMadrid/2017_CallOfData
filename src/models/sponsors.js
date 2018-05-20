@@ -24,7 +24,7 @@ export default [
     type: 'bronze',
     title: resources['bronze'],
     enterprises: [
-    //  { name: 'Máxima formación', img: '', url: 'https://www.maximaformacion.es/' },
+      { name: 'Máxima formación', img: 'assets/img/sponsor/maxima.png', url: 'https://www.maximaformacion.es/' },
       { name: 'Neo4j', img: 'assets/img/sponsor/neo4j.svg', url: 'https://neo4j.com/' },
       //  { name: 'T3chfest', img: '', url: 'https://t3chfest.uc3m.es/2019/' }
     ]
