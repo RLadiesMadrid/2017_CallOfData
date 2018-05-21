@@ -26,8 +26,8 @@ export default [
     enterprises: [
       { name: 'Máxima formación', img: 'assets/img/sponsor/maxima.png', url: 'https://www.maximaformacion.es/' },
       { name: 'Neo4j', img: 'assets/img/sponsor/neo4j.svg', url: 'https://neo4j.com/' },
-      { name: 'Promoption', img: 'assets/img/sponsor/promoption.png', url: 'https://www.promoption.com/' },
-      //  { name: 'T3chfest', img: '', url: 'https://t3chfest.uc3m.es/2019/' }
+      //{ name: 'Promoption', img: 'assets/img/sponsor/promoption.png', url: 'https://www.promoption.com/' },
+      { name: 'T3chfest', img: 'assets/img/sponsor/t3chfest.png', url: 'https://t3chfest.uc3m.es/2019/' }
     ]
   },
 /*  {
