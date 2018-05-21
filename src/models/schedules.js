@@ -12,7 +12,7 @@ export default {
     { time: '11:45', speaker: 'Hannah Frick', talk: 'Good practice for R packages', img: 'assets/img/ponente/hannah.jpg' },
     { time: '12:35', speaker: 'Celeste Durán', talk: 'Caminando hacia el Big Data', img: 'assets/img/ponente/celeste.jpeg' },
     { time: '13:30', speaker: '', talk: resources['lunch-break'], img: 'assets/img/tba.svg' },
-    { time: '15:00', speaker: '', talk: 'Lightning talk 2', img: 'assets/img/tba.svg' },
+    { time: '15:00', speaker: 'David Pastor Escuredo', talk: 'Mobile phone data for seasonal migration and food security monitoring', img: 'assets/img/ponente/david.jpg' },
     { time: '15:30', speaker: 'Nerea Luis Mingueza', talk: 'La teoría del todo: desensamblando la minería de datos', img: 'assets/img/ponente/nerea.jpeg' },
     { time: '16:20', speaker: 'Elena Torró', talk: 'Cómo el e-learning puede entender a sus estudiantes', img: 'assets/img/ponente/elenatorro.png' },
     { time: '16:50', speaker: '', talk: 'Lightning talk 4', img: 'assets/img/tba.svg' },
