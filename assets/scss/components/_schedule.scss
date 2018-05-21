@@ -20,7 +20,7 @@
     li {
       display: flex;
       align-items: center;
-      padding:0.7rem 1rem;
+      padding:0.9rem 1rem;
 
       &:nth-child(odd) {
         background: $white;
@@ -43,7 +43,7 @@
       }
 
       h4 {
-        margin: 0;
+        margin:  0.3rem 0;
         padding: 0;
         font-size: 16px;
 
@@ -54,10 +54,16 @@
 
       span, b {
         font-size: 14px;
+        display: block;
 
         @media screen and (min-width: $tablet-min-width) {
           font-size: 18px;
         }
+      }
+
+      i {
+        margin: 0 0.2rem;
+        color: $mango;
       }
     }
   }
