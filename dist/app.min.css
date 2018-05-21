@@ -743,7 +743,7 @@ template {
   .schedule-container ul li {
     display: flex;
     align-items: center;
-    padding: 0.7rem 1rem; }
+    padding: 0.9rem 1rem; }
     .schedule-container ul li:nth-child(odd) {
       background: #ffffff; }
     .schedule-container ul li img {
@@ -759,17 +759,21 @@ template {
       .schedule-container ul li img.tba {
         box-shadow: none; }
     .schedule-container ul li h4 {
-      margin: 0;
+      margin: 0.3rem 0;
       padding: 0;
       font-size: 16px; }
       @media screen and (min-width: 768px) {
         .schedule-container ul li h4 {
           font-size: 22px; } }
     .schedule-container ul li span, .schedule-container ul li b {
-      font-size: 14px; }
+      font-size: 14px;
+      display: block; }
       @media screen and (min-width: 768px) {
         .schedule-container ul li span, .schedule-container ul li b {
           font-size: 18px; } }
+    .schedule-container ul li i {
+      margin: 0 0.2rem;
+      color: #ff991d; }
 
 .speakers-container {
   padding-bottom: 60px; }

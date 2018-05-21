@@ -12,7 +12,10 @@ export default {
         <div>
           <b>${sche.time}h</b>
           <h4>${sche.talk}</h4>
-          <span>${sche.speaker}</span>
+          <span>
+            ${sche.speaker} 
+            ${sche.socials.map((social) => '<a href="' + social.url + '" target="_blank"><i class="fab fa-' + social.type + '"></i></a>', '').join('')}
+          </span>
         </div>
       </li>`;
       return acc;
