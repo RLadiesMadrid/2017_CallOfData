@@ -21,7 +21,7 @@ export default {
     {
       time: '9:45',
       speaker: 'Mariluz Congosto',
-      talk: '',
+      talk: 'En Twitter... ¿juntos pero no revueltos? <br/> Visualizando la propagación de trending topics con Gephi y d3.js',
       img: 'assets/img/ponente/mariluz.jpg',
       socials: [
         { type: 'twitter', url: 'http://twitter.com/congosto' },
