@@ -758,6 +758,8 @@ template {
           height: 4.5rem; } }
       .schedule-container ul li img.tba {
         box-shadow: none; }
+    .schedule-container ul li > div {
+      flex: 1; }
     .schedule-container ul li h4 {
       margin: 0.3rem 0;
       padding: 0;
