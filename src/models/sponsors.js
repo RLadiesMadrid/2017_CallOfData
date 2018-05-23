@@ -17,7 +17,7 @@ export default [
     enterprises: [
       { name: 'kschool', img: 'assets/img/sponsor/kschool.png', url: 'https://kschool.com/' },
      // { name: 'Metroscopia', img: '', url: 'http://metroscopia.org/' },
-     // { name: 'Decathlon', img: '', url: 'https://www.decathlon.es/' }
+      { name: 'Decathlon', img: 'assets/img/sponsor/Decathlon.png', url: 'https://www.decathlon.es/' }
     ]
   },
   {
