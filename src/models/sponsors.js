@@ -16,7 +16,7 @@ export default [
     title: resources['silver'],
     enterprises: [
       { name: 'kschool', img: 'assets/img/sponsor/kschool.png', url: 'https://kschool.com/' },
-     // { name: 'Metroscopia', img: '', url: 'http://metroscopia.org/' },
+      { name: 'Metroscopia', img: 'assets/img/sponsor/metroscopia.jpg', url: 'http://metroscopia.org/' },
       { name: 'Decathlon', img: 'assets/img/sponsor/Decathlon.png', url: 'https://www.decathlon.es/' }
     ]
   },
