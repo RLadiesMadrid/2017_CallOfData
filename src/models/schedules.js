@@ -108,7 +108,9 @@ export default {
       time: '16:50',
       speaker: 'Moisés Martínez',
       talk: 'Cargando de datos y modelos nuestras Apps', img: 'assets/img/ponente/moises.jpg',
-      socials: []
+      socials: [
+          { type: 'twitter', url: 'https://twitter.com/moisipm' }
+      ]
     },
     {
       time: '17:20',
