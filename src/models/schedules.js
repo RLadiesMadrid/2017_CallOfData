@@ -106,14 +106,14 @@ export default {
     },
     {
       time: '16:50',
-      speaker: '',
-      talk: 'Lightning talk 4', img: 'assets/img/tba.svg',
+      speaker: 'Moisés Martínez',
+      talk: 'Cargando de datos y modelos nuestras Apps', img: 'assets/img/ponente/moises.jpg',
       socials: []
     },
     {
       time: '17:20',
       speaker: 'Carmen Reina',
-      talk: '', 
+      talk: '',
       img: 'assets/img/ponente/carmen.jpg',
       socials: [
         { type: 'twitter', url: 'https://twitter.com/reigarma' },
