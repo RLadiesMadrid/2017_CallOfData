@@ -33,7 +33,7 @@ export default {
   "newsletter-form-message": "We won't bother you much, we'll just send updates of the event",
   "notify": "Do you want to get the latest news?",
   "opening": "Opening ceremonies",
-  "opening-datathon": "Opening datathon",
+  "opening-datathon": "Datasets explanation",
   "project-exposition": "Project exposition",
   "question-email": "Write down your email address",
   "lunch-break": "Lunch break",

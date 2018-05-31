@@ -19,7 +19,7 @@ export default {
       socials: []
     },
     {
-      time: '9:45',
+      time: '9:50',
       speaker: 'Mariluz Congosto',
       talk: 'En Twitter... ¿juntos pero no revueltos? <br/> Visualizando la propagación de trending topics con Gephi y d3.js',
       img: 'assets/img/ponente/mariluz.jpg',
@@ -29,7 +29,7 @@ export default {
       ]
     },
     {
-      time: '10:30',
+      time: '10:40',
       speaker: 'Jorge Aznar Tobajas',
       talk: 'Iba a quejarme en Twitter y me lié',
       img: 'assets/img/ponente/jorge.jpg',
@@ -40,14 +40,14 @@ export default {
       ]
     },
     {
-      time: '11:00',
+      time: '11:15',
       speaker: '',
       talk: resources['coffee-break'],
       img: 'assets/img/tba.svg',
       socials: []
     },
     {
-      time: '11:45',
+      time: '12:00',
       speaker: 'Hannah Frick',
       talk: 'Good practice for R packages',
       img: 'assets/img/ponente/hannah.jpg',
@@ -56,7 +56,7 @@ export default {
       ]
     },
     {
-      time: '12:35',
+      time: '12:50',
       speaker: 'Celeste Durán',
       talk: 'Caminando hacia el Big Data',
       img: 'assets/img/ponente/celeste.jpeg',
@@ -66,7 +66,7 @@ export default {
       ]
     },
     {
-      time: '13:30',
+      time: '13:40',
       speaker: '',
       talk: resources['lunch-break'],
       img: 'assets/img/tba.svg',
