@@ -9,7 +9,8 @@ export default [
     enterprises: [
       { name: 'iexl', img: 'assets/img/sponsor/ie.svg', url: 'https://www.ie.edu/' },
       { name: 'Altran', img: 'assets/img/sponsor/altran.JPG', url: 'https://www.altran.com/es/es/' },
-      { name: 'Fluge', img: 'assets/img/sponsor/Fluge.JPG', url: 'https://www.fluge.es' }
+      { name: 'Fluge', img: 'assets/img/sponsor/Fluge.JPG', url: 'https://www.fluge.es' },
+      { name: 'Datatons', img: 'assets/img/sponsor/datatons.png', url: 'https://www.datatons.com/' }
     ]
   },
   {
